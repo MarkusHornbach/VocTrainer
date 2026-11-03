@@ -1,0 +1,530 @@
+{
+    "format": "voctrainer-sync",
+    "version": 5,
+    "bookId": null,
+    "bookTitle": null,
+    "language": null,
+    "source": null,
+    "created": null,
+    "entries": [
+        {
+            "english": "fish",
+            "german": [
+                "Fisch"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": "An example sentence.",
+            "page": 10,
+            "type": "noun",
+            "id": "m1",
+            "leitnerLevel": 0,
+            "updatedAt": 1771228801000,
+            "isDeleted": false,
+            "lastReviewedAt": null,
+            "coreWord": "fish",
+            "highestLevel": 0,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "boat",
+            "german": [
+                "Boot"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "noun",
+            "id": "m2",
+            "leitnerLevel": 1,
+            "updatedAt": 1771488001000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771488000000,
+            "coreWord": "boat",
+            "highestLevel": 1,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "(to) swim",
+            "german": [
+                "schwimmen"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "verb",
+            "id": "m3",
+            "leitnerLevel": 2,
+            "updatedAt": 1771574401000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771574400000,
+            "coreWord": "swim",
+            "highestLevel": 3,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "deep",
+            "german": [
+                "tief"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": null,
+            "page": 11,
+            "type": "other",
+            "id": "m4",
+            "leitnerLevel": 3,
+            "updatedAt": 1771574401000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771574400000,
+            "coreWord": "deep",
+            "highestLevel": 3,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "island",
+            "german": [
+                "Insel"
+            ],
+            "unit": 2,
+            "unitTitle": "Unit 2",
+            "part": "B",
+            "extra": null,
+            "page": 20,
+            "type": "noun",
+            "id": "m5",
+            "leitnerLevel": 4,
+            "updatedAt": 1771660801000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771660800000,
+            "coreWord": "island",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": 1771660800500,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "by the sea",
+            "german": [
+                "am Meer"
+            ],
+            "unit": 2,
+            "unitTitle": "Unit 2",
+            "part": "B",
+            "extra": null,
+            "page": 20,
+            "type": "phrase",
+            "id": "m6",
+            "leitnerLevel": 5,
+            "updatedAt": 1771747201000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771747200000,
+            "coreWord": "sea",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1771401600500,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "calm",
+            "german": [
+                "ruhig",
+                "still"
+            ],
+            "unit": 2,
+            "unitTitle": "Unit 2",
+            "part": null,
+            "extra": null,
+            "page": null,
+            "type": null,
+            "id": "m7",
+            "leitnerLevel": 5,
+            "updatedAt": 1771747201000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771747200000,
+            "coreWord": "calm",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1771488000500,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "salty",
+            "german": [
+                "salzig"
+            ],
+            "unit": 2,
+            "unitTitle": "Unit 2",
+            "part": "B",
+            "extra": null,
+            "page": 21,
+            "type": "noun",
+            "id": "m8",
+            "leitnerLevel": 2,
+            "updatedAt": 1771401601000,
+            "isDeleted": true,
+            "lastReviewedAt": 1771401600000,
+            "coreWord": null,
+            "highestLevel": 4,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "english": "tree",
+            "german": [
+                "Baum"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": "An example sentence.",
+            "page": 10,
+            "type": "noun",
+            "id": "w1",
+            "leitnerLevel": 1,
+            "updatedAt": 1772006401000,
+            "isDeleted": false,
+            "lastReviewedAt": 1772006400000,
+            "coreWord": "tree",
+            "highestLevel": 1,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-wald"
+        },
+        {
+            "english": "leaf",
+            "german": [
+                "Blatt"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "noun",
+            "id": "w2",
+            "leitnerLevel": 0,
+            "updatedAt": 1771228801000,
+            "isDeleted": false,
+            "lastReviewedAt": null,
+            "coreWord": "leaf",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-wald"
+        },
+        {
+            "english": "(to) climb",
+            "german": [
+                "klettern"
+            ],
+            "unit": 1,
+            "unitTitle": "Unit 1",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "verb",
+            "id": "w3",
+            "leitnerLevel": 2,
+            "updatedAt": 1772006401000,
+            "isDeleted": false,
+            "lastReviewedAt": 1772006400000,
+            "coreWord": "climb",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": null,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "irregularVerbs": [
+        {
+            "infinitive": "(to) swim",
+            "simplePast": "swam",
+            "pastParticiple": "swum",
+            "german": [
+                "schwimmen"
+            ],
+            "unit": 1,
+            "part": "A",
+            "page": 10,
+            "germanAdded": false,
+            "id": "i1",
+            "leitnerLevel": 3,
+            "updatedAt": 1771574400000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771574400000,
+            "bookId": "fixture-meer"
+        },
+        {
+            "infinitive": "(to) dig",
+            "simplePast": "dug",
+            "pastParticiple": null,
+            "german": [
+                "graben"
+            ],
+            "unit": 1,
+            "part": "B",
+            "page": 11,
+            "germanAdded": true,
+            "id": "i2",
+            "leitnerLevel": 1,
+            "updatedAt": 1771488000000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771488000000,
+            "bookId": "fixture-meer"
+        },
+        {
+            "infinitive": "(to) sink",
+            "simplePast": "sank",
+            "pastParticiple": "sunk",
+            "german": [
+                "sinken"
+            ],
+            "unit": 2,
+            "part": null,
+            "page": null,
+            "germanAdded": false,
+            "id": "i3",
+            "leitnerLevel": 5,
+            "updatedAt": 1771747200000,
+            "isDeleted": false,
+            "lastReviewedAt": 1771747200000,
+            "bookId": "fixture-meer"
+        },
+        {
+            "infinitive": "(to) hide",
+            "simplePast": "hid",
+            "pastParticiple": "hidden",
+            "german": [
+                "sich verstecken",
+                "verstecken"
+            ],
+            "unit": 1,
+            "part": "A",
+            "page": 10,
+            "germanAdded": false,
+            "id": "i4",
+            "leitnerLevel": 0,
+            "updatedAt": 1771228800000,
+            "isDeleted": true,
+            "lastReviewedAt": null,
+            "bookId": "fixture-meer"
+        },
+        {
+            "infinitive": "(to) grow",
+            "simplePast": "grew",
+            "pastParticiple": "grown",
+            "german": [
+                "wachsen"
+            ],
+            "unit": 1,
+            "part": "A",
+            "page": 10,
+            "germanAdded": false,
+            "id": "i5",
+            "leitnerLevel": 2,
+            "updatedAt": 1772006400000,
+            "isDeleted": false,
+            "lastReviewedAt": 1772006400000,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "practiceDays": [
+        {
+            "date": "2026-02-18",
+            "deviceId": "device-a",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1771401600010,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-19",
+            "deviceId": "device-a",
+            "roundsCompleted": 3,
+            "dailyGoal": 2,
+            "updatedAt": 1771488000010,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-20",
+            "deviceId": "device-a",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1771574400010,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-22",
+            "deviceId": "device-b",
+            "roundsCompleted": 1,
+            "dailyGoal": 3,
+            "updatedAt": 1771747200010,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-24",
+            "deviceId": "device-a",
+            "roundsCompleted": 0,
+            "dailyGoal": 2,
+            "updatedAt": 1772006400010,
+            "bookId": "fixture-wald"
+        },
+        {
+            "date": "2026-02-25",
+            "deviceId": "device-a",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772006400010,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "pointsDays": [
+        {
+            "date": "2026-02-18",
+            "deviceId": "device-a",
+            "risePoints": 40,
+            "dailyBonus": 11,
+            "startPoints": 5,
+            "updatedAt": 1771401600020,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-19",
+            "deviceId": "device-a",
+            "risePoints": 30,
+            "dailyBonus": 12,
+            "startPoints": 0,
+            "updatedAt": 1771488000020,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-22",
+            "deviceId": "device-b",
+            "risePoints": 10,
+            "dailyBonus": 0,
+            "startPoints": 0,
+            "updatedAt": 1771747200020,
+            "bookId": "fixture-meer"
+        },
+        {
+            "date": "2026-02-24",
+            "deviceId": "device-a",
+            "risePoints": 0,
+            "dailyBonus": 0,
+            "startPoints": 0,
+            "updatedAt": 1772006400020,
+            "bookId": "fixture-wald"
+        },
+        {
+            "date": "2026-02-25",
+            "deviceId": "device-a",
+            "risePoints": 5,
+            "dailyBonus": 0,
+            "startPoints": 0,
+            "updatedAt": 1772006400030,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "figures": [
+        {
+            "slot": 0,
+            "kind": "dragon",
+            "pointsAtStart": 0,
+            "stage": 10,
+            "startedAt": 1771228800000,
+            "finishedAt": 1771660800000,
+            "updatedAt": 1771660800000,
+            "bookId": "fixture-meer"
+        },
+        {
+            "slot": 1,
+            "kind": "monster",
+            "pointsAtStart": 88,
+            "stage": 2,
+            "startedAt": 1771660800100,
+            "finishedAt": null,
+            "updatedAt": 1771747200000,
+            "bookId": "fixture-meer"
+        },
+        {
+            "slot": 0,
+            "kind": "fighter",
+            "pointsAtStart": 0,
+            "stage": 10,
+            "startedAt": 1771315200000,
+            "finishedAt": 1771833600000,
+            "updatedAt": 1771920000000,
+            "bookId": "fixture-wald"
+        },
+        {
+            "slot": 1,
+            "kind": "dragon",
+            "pointsAtStart": 0,
+            "stage": 1,
+            "startedAt": 1771920000100,
+            "finishedAt": null,
+            "updatedAt": 1772006400000,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "badges": [
+        {
+            "series": "streak",
+            "tier": 1,
+            "reachedAt": 1771574400050,
+            "bookId": "fixture-meer"
+        },
+        {
+            "series": "sure_words",
+            "tier": 1,
+            "reachedAt": 1771747200050,
+            "bookId": "fixture-wald"
+        }
+    ],
+    "appVariant": "release",
+    "appVersion": "0.14.0",
+    "settings": {
+        "theme": "gaming_dark",
+        "vibration": true,
+        "autoSpeak": false,
+        "editButtonInQuiz": true,
+        "quizMode": "vocabulary",
+        "verbForms": 3,
+        "dailyGoal": 4,
+        "reminderEnabled": true,
+        "reminderMinutes": 435,
+        "levelCapIntroDone": false,
+        "levelCapNotice": 0,
+        "levelCapCount": 0,
+        "tipsDone": [
+            "selection",
+            "start_button",
+            "typing"
+        ]
+    },
+    "books": [
+        {
+            "id": "fixture-meer",
+            "title": "Meerbuch",
+            "language": "en",
+            "isActive": true,
+            "quizFilter": "{\"unit\":\"2\"}",
+            "verbQuizFilter": null,
+            "figureSlotStart": 0
+        },
+        {
+            "id": "fixture-wald",
+            "title": "Waldbuch",
+            "language": "en",
+            "isActive": false,
+            "quizFilter": null,
+            "verbQuizFilter": "{}",
+            "figureSlotStart": 1
+        }
+    ]
+}

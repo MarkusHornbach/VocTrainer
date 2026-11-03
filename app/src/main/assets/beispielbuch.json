@@ -1,0 +1,2425 @@
+{
+  "format": "voctrainer-import",
+  "version": 2,
+  "bookId": "beispielbuch",
+  "bookTitle": "Beispielbuch Englisch",
+  "language": "en",
+  "source": "Beispielbuch (selbst erstellt)",
+  "created": "2026-10-23",
+  "entries": [
+    {
+      "english": "pet",
+      "german": [
+        "Haustier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "pet",
+      "extra": "Do you have a pet?"
+    },
+    {
+      "english": "animal",
+      "german": [
+        "Tier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "animal",
+      "extra": null
+    },
+    {
+      "english": "animal shelter",
+      "german": [
+        "Tierheim"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "shelter",
+      "extra": "We got our cat from the animal shelter."
+    },
+    {
+      "english": "rabbit",
+      "german": [
+        "Kaninchen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "rabbit",
+      "extra": null
+    },
+    {
+      "english": "guinea pig",
+      "german": [
+        "Meerschweinchen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "guinea",
+      "extra": null
+    },
+    {
+      "english": "owner",
+      "german": [
+        "Besitzer/in"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "owner",
+      "extra": null
+    },
+    {
+      "english": "(to) take care of sb./sth.",
+      "german": [
+        "sich um jn./etwas kümmern"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "verb",
+      "coreWord": "care",
+      "extra": null
+    },
+    {
+      "english": "(to) promise sb. sth.",
+      "german": [
+        "jm. etwas versprechen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "verb",
+      "coreWord": "promise",
+      "extra": null
+    },
+    {
+      "english": "lonely",
+      "german": [
+        "einsam"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "other",
+      "coreWord": "lonely",
+      "extra": "The old dog looks lonely."
+    },
+    {
+      "english": "Can we keep it?",
+      "german": [
+        "Können wir es behalten?"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "phrase",
+      "coreWord": "keep",
+      "extra": null
+    },
+    {
+      "english": "cage",
+      "german": [
+        "Käfig"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 151,
+      "type": "noun",
+      "coreWord": "cage",
+      "extra": null
+    },
+    {
+      "english": "What about a …?",
+      "german": [
+        "Wie wäre es mit …?"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 151,
+      "type": "phrase",
+      "coreWord": "about",
+      "extra": "What about a rabbit?"
+    },
+    {
+      "english": "the whole family",
+      "german": [
+        "die ganze Familie"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 151,
+      "type": "noun",
+      "coreWord": "whole",
+      "extra": null
+    },
+    {
+      "english": "(not) at all",
+      "german": [
+        "überhaupt (nicht)"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 151,
+      "type": "other",
+      "coreWord": "all",
+      "extra": "I don't like spiders at all."
+    },
+    {
+      "english": "neighbour",
+      "german": [
+        "Nachbar/-in"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "noun",
+      "coreWord": "neighbour",
+      "extra": "American English: neighbor"
+    },
+    {
+      "english": "(to) ask sb. for sth.",
+      "german": [
+        "jn. um etwas bitten"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "verb",
+      "coreWord": "ask",
+      "extra": null
+    },
+    {
+      "english": "(to) be allowed to",
+      "german": [
+        "dürfen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "verb",
+      "coreWord": "allowed",
+      "extra": "We aren't allowed to have a dog in our flat."
+    },
+    {
+      "english": "flat",
+      "german": [
+        "Wohnung"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "noun",
+      "coreWord": "flat",
+      "extra": "American English: apartment"
+    },
+    {
+      "english": "garden",
+      "german": [
+        "Garten"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "noun",
+      "coreWord": "garden",
+      "extra": null
+    },
+    {
+      "english": "small",
+      "german": [
+        "klein"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "other",
+      "coreWord": "small",
+      "extra": "small ↔ big"
+    },
+    {
+      "english": "large",
+      "german": [
+        "groß"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 151,
+      "type": "other",
+      "coreWord": "large",
+      "extra": null
+    },
+    {
+      "english": "big",
+      "german": [
+        "groß",
+        "dick"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "other",
+      "coreWord": "big",
+      "extra": null
+    },
+    {
+      "english": "enough",
+      "german": [
+        "genug"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "other",
+      "coreWord": "enough",
+      "extra": "Is there enough space for a dog?"
+    },
+    {
+      "english": "(to) walk",
+      "german": [
+        "spazieren gehen",
+        "(zu Fuß) gehen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "verb",
+      "coreWord": "walk",
+      "extra": null
+    },
+    {
+      "english": "(to) take sb. for a walk",
+      "german": [
+        "mit jm. spazieren gehen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "verb",
+      "coreWord": "walk",
+      "extra": null
+    },
+    {
+      "english": "lead",
+      "german": [
+        "Leine"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "noun",
+      "coreWord": "lead",
+      "extra": "Keep your dog on a lead in the park."
+    },
+    {
+      "english": "(to) bark",
+      "german": [
+        "bellen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "verb",
+      "coreWord": "bark",
+      "extra": null
+    },
+    {
+      "english": "puppy",
+      "german": [
+        "Welpe",
+        "junger Hund"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "noun",
+      "coreWord": "puppy",
+      "extra": null
+    },
+    {
+      "english": "Don't worry.",
+      "german": [
+        "Mach dir keine Sorgen."
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "phrase",
+      "coreWord": "worry",
+      "extra": null
+    },
+    {
+      "english": "That's a good idea!",
+      "german": [
+        "Das ist eine gute Idee!"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "A",
+      "page": 152,
+      "type": "phrase",
+      "coreWord": "idea",
+      "extra": null
+    },
+    {
+      "english": "vet",
+      "german": [
+        "Tierarzt",
+        "Tierärztin"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 152,
+      "type": "noun",
+      "coreWord": "vet",
+      "extra": null
+    },
+    {
+      "english": "ill",
+      "german": [
+        "krank"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 152,
+      "type": "other",
+      "coreWord": "ill",
+      "extra": "ill ↔ well"
+    },
+    {
+      "english": "(to) feed",
+      "german": [
+        "füttern"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 152,
+      "type": "verb",
+      "coreWord": "feed",
+      "extra": "simple past: fed"
+    },
+    {
+      "english": "food bowl",
+      "german": [
+        "Futternapf"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "noun",
+      "coreWord": "bowl",
+      "extra": null
+    },
+    {
+      "english": "water",
+      "german": [
+        "Wasser"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "noun",
+      "coreWord": "water",
+      "extra": null
+    },
+    {
+      "english": "(to) wash",
+      "german": [
+        "waschen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "verb",
+      "coreWord": "wash",
+      "extra": null
+    },
+    {
+      "english": "brush",
+      "german": [
+        "Bürste"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "noun",
+      "coreWord": "brush",
+      "extra": null
+    },
+    {
+      "english": "(to) carry",
+      "german": [
+        "tragen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "verb",
+      "coreWord": "carry",
+      "extra": "Can you carry the cage, please?"
+    },
+    {
+      "english": "heavy",
+      "german": [
+        "schwer"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "other",
+      "coreWord": "heavy",
+      "extra": "heavy ↔ light"
+    },
+    {
+      "english": "(to) help",
+      "german": [
+        "helfen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "verb",
+      "coreWord": "help",
+      "extra": null
+    },
+    {
+      "english": "kind",
+      "german": [
+        "freundlich",
+        "nett"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "other",
+      "coreWord": "kind",
+      "extra": null
+    },
+    {
+      "english": "quiet",
+      "german": [
+        "ruhig",
+        "leise"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "other",
+      "coreWord": "quiet",
+      "extra": null
+    },
+    {
+      "english": "calm",
+      "german": [
+        "ruhig"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "other",
+      "coreWord": "calm",
+      "extra": "Stay calm – the rabbit is scared."
+    },
+    {
+      "english": "How old is he?",
+      "german": [
+        "Wie alt ist er?"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "B",
+      "page": 153,
+      "type": "phrase",
+      "coreWord": "old",
+      "extra": null
+    },
+    {
+      "english": "diary",
+      "german": [
+        "Tagebuch"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "noun",
+      "coreWord": "diary",
+      "extra": null
+    },
+    {
+      "english": "Dear Diary, …",
+      "german": [
+        "Liebes Tagebuch, …"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "phrase",
+      "coreWord": "Dear",
+      "extra": "Anrede am Anfang eines Tagebucheintrags"
+    },
+    {
+      "english": "first",
+      "german": [
+        "zuerst",
+        "erste(r, s)"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "other",
+      "coreWord": "first",
+      "extra": null
+    },
+    {
+      "english": "then",
+      "german": [
+        "dann"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "other",
+      "coreWord": "then",
+      "extra": null
+    },
+    {
+      "english": "(to) play",
+      "german": [
+        "spielen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "verb",
+      "coreWord": "play",
+      "extra": null
+    },
+    {
+      "english": "ball",
+      "german": [
+        "Ball"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "noun",
+      "coreWord": "ball",
+      "extra": null
+    },
+    {
+      "english": "(to) jump",
+      "german": [
+        "springen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "verb",
+      "coreWord": "jump",
+      "extra": null
+    },
+    {
+      "english": "friendly",
+      "german": [
+        "freundlich"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "other",
+      "coreWord": "friendly",
+      "extra": null
+    },
+    {
+      "english": "tired",
+      "german": [
+        "müde"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "other",
+      "coreWord": "tired",
+      "extra": null
+    },
+    {
+      "english": "(to) fall asleep",
+      "german": [
+        "einschlafen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "verb",
+      "coreWord": "asleep",
+      "extra": null
+    },
+    {
+      "english": "Good night!",
+      "german": [
+        "Gute Nacht!"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": "Pet diary",
+      "page": 154,
+      "type": "phrase",
+      "coreWord": "night",
+      "extra": null
+    },
+    {
+      "english": "market",
+      "german": [
+        "Markt"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "noun",
+      "coreWord": "market",
+      "extra": null
+    },
+    {
+      "english": "market stall",
+      "german": [
+        "Marktstand"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "noun",
+      "coreWord": "stall",
+      "extra": null
+    },
+    {
+      "english": "(to) go shopping",
+      "german": [
+        "einkaufen gehen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "verb",
+      "coreWord": "shopping",
+      "extra": null
+    },
+    {
+      "english": "shopping list",
+      "german": [
+        "Einkaufszettel"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "noun",
+      "coreWord": "list",
+      "extra": null
+    },
+    {
+      "english": "every Monday/Tuesday/…",
+      "german": [
+        "jeden Montag/Dienstag/…"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "other",
+      "coreWord": "every",
+      "extra": "The market is open every Saturday."
+    },
+    {
+      "english": "Saturday",
+      "german": [
+        "Samstag"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "noun",
+      "coreWord": "Saturday",
+      "extra": null
+    },
+    {
+      "english": "early",
+      "german": [
+        "früh"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "other",
+      "coreWord": "early",
+      "extra": null
+    },
+    {
+      "english": "late",
+      "german": [
+        "spät",
+        "zu spät"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "other",
+      "coreWord": "late",
+      "extra": "early ↔ late"
+    },
+    {
+      "english": "Let's go!",
+      "german": [
+        "Los geht's!",
+        "Lass uns gehen!"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "phrase",
+      "coreWord": "Let's",
+      "extra": null
+    },
+    {
+      "english": "crowded",
+      "german": [
+        "voll",
+        "überfüllt"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": null,
+      "page": 155,
+      "type": "other",
+      "coreWord": "crowded",
+      "extra": null
+    },
+    {
+      "english": "(to) buy",
+      "german": [
+        "kaufen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "verb",
+      "coreWord": "buy",
+      "extra": "simple past: bought"
+    },
+    {
+      "english": "(to) sell",
+      "german": [
+        "verkaufen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "verb",
+      "coreWord": "sell",
+      "extra": "simple past: sold"
+    },
+    {
+      "english": "shop assistant",
+      "german": [
+        "Verkäufer/in"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "noun",
+      "coreWord": "assistant",
+      "extra": null
+    },
+    {
+      "english": "customer",
+      "german": [
+        "Kunde",
+        "Kundin"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "noun",
+      "coreWord": "customer",
+      "extra": null
+    },
+    {
+      "english": "price",
+      "german": [
+        "Preis"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "noun",
+      "coreWord": "price",
+      "extra": null
+    },
+    {
+      "english": "cheap",
+      "german": [
+        "billig",
+        "günstig"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "other",
+      "coreWord": "cheap",
+      "extra": null
+    },
+    {
+      "english": "expensive",
+      "german": [
+        "teuer"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "other",
+      "coreWord": "expensive",
+      "extra": "cheap ↔ expensive"
+    },
+    {
+      "english": "How much is it?",
+      "german": [
+        "Wie viel kostet es?"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "phrase",
+      "coreWord": "much",
+      "extra": null
+    },
+    {
+      "english": "That's too expensive.",
+      "german": [
+        "Das ist zu teuer."
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "phrase",
+      "coreWord": "too",
+      "extra": null
+    },
+    {
+      "english": "change",
+      "german": [
+        "Wechselgeld"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 156,
+      "type": "noun",
+      "coreWord": "change",
+      "extra": "Don't forget your change!"
+    },
+    {
+      "english": "bag",
+      "german": [
+        "Tasche",
+        "Tüte"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "bag",
+      "extra": null
+    },
+    {
+      "english": "light",
+      "german": [
+        "leicht"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "other",
+      "coreWord": "light",
+      "extra": "Wortfamilie: Bedeutung hier „nicht schwer“"
+    },
+    {
+      "english": "(to) pay (for sth.)",
+      "german": [
+        "(etwas) bezahlen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "verb",
+      "coreWord": "pay",
+      "extra": "simple past: paid"
+    },
+    {
+      "english": "coin",
+      "german": [
+        "Münze"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "coin",
+      "extra": null
+    },
+    {
+      "english": "e.g.",
+      "german": [
+        "z. B. (zum Beispiel)"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "other",
+      "coreWord": "e.g.",
+      "extra": "e.g. = for example"
+    },
+    {
+      "english": "a kilo of apples",
+      "german": [
+        "ein Kilo Äpfel"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "kilo",
+      "extra": null
+    },
+    {
+      "english": "apple",
+      "german": [
+        "Apfel"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "apple",
+      "extra": null
+    },
+    {
+      "english": "Here's your change.",
+      "german": [
+        "Hier ist dein Wechselgeld."
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "A",
+      "page": 157,
+      "type": "phrase",
+      "coreWord": "change",
+      "extra": null
+    },
+    {
+      "english": "food",
+      "german": [
+        "Essen",
+        "Lebensmittel"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "food",
+      "extra": null
+    },
+    {
+      "english": "vegetables",
+      "german": [
+        "Gemüse"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "vegetables",
+      "extra": "always plural"
+    },
+    {
+      "english": "fruit",
+      "german": [
+        "Obst"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 157,
+      "type": "noun",
+      "coreWord": "fruit",
+      "extra": null
+    },
+    {
+      "english": "fresh",
+      "german": [
+        "frisch"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 157,
+      "type": "other",
+      "coreWord": "fresh",
+      "extra": null
+    },
+    {
+      "english": "(to) taste",
+      "german": [
+        "schmecken",
+        "probieren"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "taste",
+      "extra": "The bread tastes great."
+    },
+    {
+      "english": "delicious",
+      "german": [
+        "köstlich",
+        "lecker"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "other",
+      "coreWord": "delicious",
+      "extra": null
+    },
+    {
+      "english": "(to) try",
+      "german": [
+        "probieren",
+        "versuchen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "try",
+      "extra": null
+    },
+    {
+      "english": "(to) shop",
+      "german": [
+        "einkaufen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "shop",
+      "extra": "simple past: shopped"
+    },
+    {
+      "english": "(to) stop",
+      "german": [
+        "anhalten",
+        "aufhören"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "stop",
+      "extra": null
+    },
+    {
+      "english": "(to) dance",
+      "german": [
+        "tanzen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "dance",
+      "extra": null
+    },
+    {
+      "english": "dancer",
+      "german": [
+        "Tänzer/in"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "noun",
+      "coreWord": "dancer",
+      "extra": "Wortfamilie: (to) dance"
+    },
+    {
+      "english": "street musician",
+      "german": [
+        "Straßenmusiker/in"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "noun",
+      "coreWord": "musician",
+      "extra": null
+    },
+    {
+      "english": "(to) listen (to)",
+      "german": [
+        "zuhören"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "listen",
+      "extra": "Listen to the music!"
+    },
+    {
+      "english": "(to) answer the phone",
+      "german": [
+        "ans Telefon gehen"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "answer",
+      "extra": null
+    },
+    {
+      "english": "(to) invite sb. (to)",
+      "german": [
+        "jn. einladen (zu)"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "verb",
+      "coreWord": "invite",
+      "extra": null
+    },
+    {
+      "english": "present",
+      "german": [
+        "Geschenk"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "noun",
+      "coreWord": "present",
+      "extra": null
+    },
+    {
+      "english": "gift",
+      "german": [
+        "Geschenk"
+      ],
+      "unit": 2,
+      "unitTitle": "Market day",
+      "part": "B",
+      "page": 158,
+      "type": "noun",
+      "coreWord": "gift",
+      "extra": "gift = present"
+    },
+    {
+      "english": "woods",
+      "german": [
+        "Wald"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "woods",
+      "extra": "always plural: in the woods"
+    },
+    {
+      "english": "weekend",
+      "german": [
+        "Wochenende"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "weekend",
+      "extra": null
+    },
+    {
+      "english": "at the weekend",
+      "german": [
+        "am Wochenende"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "other",
+      "coreWord": "weekend",
+      "extra": "American English: on the weekend"
+    },
+    {
+      "english": "tent",
+      "german": [
+        "Zelt"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "tent",
+      "extra": null
+    },
+    {
+      "english": "(to) camp",
+      "german": [
+        "zelten"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "verb",
+      "coreWord": "camp",
+      "extra": null
+    },
+    {
+      "english": "camper",
+      "german": [
+        "Camper/in"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "camper",
+      "extra": null
+    },
+    {
+      "english": "ranger",
+      "german": [
+        "Förster/in",
+        "Parkwächter/in"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "ranger",
+      "extra": null
+    },
+    {
+      "english": "(to) rain",
+      "german": [
+        "regnen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "verb",
+      "coreWord": "rain",
+      "extra": "It's raining."
+    },
+    {
+      "english": "weather",
+      "german": [
+        "Wetter"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": null,
+      "page": 159,
+      "type": "noun",
+      "coreWord": "weather",
+      "extra": null
+    },
+    {
+      "english": "sunny",
+      "german": [
+        "sonnig"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "other",
+      "coreWord": "sunny",
+      "extra": null
+    },
+    {
+      "english": "cloudy",
+      "german": [
+        "bewölkt"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "other",
+      "coreWord": "cloudy",
+      "extra": null
+    },
+    {
+      "english": "(to) stay",
+      "german": [
+        "bleiben",
+        "übernachten"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "verb",
+      "coreWord": "stay",
+      "extra": "We stayed in the woods for two nights."
+    },
+    {
+      "english": "(to) put up a tent",
+      "german": [
+        "ein Zelt aufbauen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "verb",
+      "coreWord": "up",
+      "extra": null
+    },
+    {
+      "english": "sleeping bag",
+      "german": [
+        "Schlafsack"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "noun",
+      "coreWord": "sleeping",
+      "extra": null
+    },
+    {
+      "english": "torch",
+      "german": [
+        "Taschenlampe"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "noun",
+      "coreWord": "torch",
+      "extra": "American English: flashlight"
+    },
+    {
+      "english": "light",
+      "german": [
+        "Licht"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "noun",
+      "coreWord": "light",
+      "extra": null
+    },
+    {
+      "english": "dark",
+      "german": [
+        "dunkel"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "other",
+      "coreWord": "dark",
+      "extra": "It gets dark at eight."
+    },
+    {
+      "english": "o'clock",
+      "german": [
+        "Uhr (bei Uhrzeiten)"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "other",
+      "coreWord": "o'clock",
+      "extra": "at seven o'clock"
+    },
+    {
+      "english": "(to) turn sth. off",
+      "german": [
+        "etwas ausschalten"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "verb",
+      "coreWord": "off",
+      "extra": null
+    },
+    {
+      "english": "(to) turn sth. on",
+      "german": [
+        "etwas einschalten"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "verb",
+      "coreWord": "on",
+      "extra": null
+    },
+    {
+      "english": "(to) work",
+      "german": [
+        "funktionieren",
+        "arbeiten"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "verb",
+      "coreWord": "work",
+      "extra": "My torch doesn't work."
+    },
+    {
+      "english": "Are you scared?",
+      "german": [
+        "Hast du Angst?"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "phrase",
+      "coreWord": "scared",
+      "extra": null
+    },
+    {
+      "english": "No way!",
+      "german": [
+        "Auf keinen Fall!"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "A",
+      "page": 160,
+      "type": "phrase",
+      "coreWord": "way",
+      "extra": null
+    },
+    {
+      "english": "path",
+      "german": [
+        "Weg",
+        "Pfad"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "path",
+      "extra": null
+    },
+    {
+      "english": "river",
+      "german": [
+        "Fluss"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "river",
+      "extra": null
+    },
+    {
+      "english": "bridge",
+      "german": [
+        "Brücke"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "bridge",
+      "extra": null
+    },
+    {
+      "english": "(to) climb",
+      "german": [
+        "klettern"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "verb",
+      "coreWord": "climb",
+      "extra": null
+    },
+    {
+      "english": "tree",
+      "german": [
+        "Baum"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "tree",
+      "extra": null
+    },
+    {
+      "english": "hill",
+      "german": [
+        "Hügel"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "hill",
+      "extra": null
+    },
+    {
+      "english": "(to) land",
+      "german": [
+        "landen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "verb",
+      "coreWord": "land",
+      "extra": null
+    },
+    {
+      "english": "deer",
+      "german": [
+        "Reh",
+        "Hirsch"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "deer",
+      "extra": "plural: deer"
+    },
+    {
+      "english": "owl",
+      "german": [
+        "Eule"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "noun",
+      "coreWord": "owl",
+      "extra": null
+    },
+    {
+      "english": "(to) look up",
+      "german": [
+        "nach oben schauen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "verb",
+      "coreWord": "up",
+      "extra": null
+    },
+    {
+      "english": "well-known",
+      "german": [
+        "bekannt"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "other",
+      "coreWord": "well-known",
+      "extra": null
+    },
+    {
+      "english": "suddenly",
+      "german": [
+        "plötzlich"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "other",
+      "coreWord": "suddenly",
+      "extra": null
+    },
+    {
+      "english": "What was that?",
+      "german": [
+        "Was war das?"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "phrase",
+      "coreWord": "was",
+      "extra": null
+    },
+    {
+      "english": "Let me see.",
+      "german": [
+        "Lass mich mal sehen."
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "B",
+      "page": 161,
+      "type": "phrase",
+      "coreWord": "Let",
+      "extra": null
+    },
+    {
+      "english": "campfire",
+      "german": [
+        "Lagerfeuer"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "noun",
+      "coreWord": "campfire",
+      "extra": null
+    },
+    {
+      "english": "(to) cook",
+      "german": [
+        "kochen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "verb",
+      "coreWord": "cook",
+      "extra": null
+    },
+    {
+      "english": "sausage",
+      "german": [
+        "Würstchen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "noun",
+      "coreWord": "sausage",
+      "extra": null
+    },
+    {
+      "english": "marshmallow",
+      "german": [
+        "Marshmallow"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "noun",
+      "coreWord": "marshmallow",
+      "extra": null
+    },
+    {
+      "english": "(to) sing",
+      "german": [
+        "singen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "verb",
+      "coreWord": "sing",
+      "extra": "simple past: sang"
+    },
+    {
+      "english": "story",
+      "german": [
+        "Geschichte"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "noun",
+      "coreWord": "story",
+      "extra": null
+    },
+    {
+      "english": "(not) bad",
+      "german": [
+        "(nicht) schlecht"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "other",
+      "coreWord": "bad",
+      "extra": null
+    },
+    {
+      "english": "brave",
+      "german": [
+        "mutig"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 162,
+      "type": "other",
+      "coreWord": "brave",
+      "extra": null
+    },
+    {
+      "english": "Have you ever …?",
+      "german": [
+        "Hast du jemals …?"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 163,
+      "type": "phrase",
+      "coreWord": "ever",
+      "extra": null
+    },
+    {
+      "english": "the next morning",
+      "german": [
+        "am nächsten Morgen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 163,
+      "type": "other",
+      "coreWord": "next",
+      "extra": null
+    },
+    {
+      "english": "(to) pack",
+      "german": [
+        "packen"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 163,
+      "type": "verb",
+      "coreWord": "pack",
+      "extra": null
+    },
+    {
+      "english": "What a great weekend!",
+      "german": [
+        "Was für ein tolles Wochenende!"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 163,
+      "type": "phrase",
+      "coreWord": "great",
+      "extra": null
+    },
+    {
+      "english": "See you soon!",
+      "german": [
+        "Bis bald!"
+      ],
+      "unit": 3,
+      "unitTitle": "A weekend in the woods",
+      "part": "C",
+      "page": 163,
+      "type": "phrase",
+      "coreWord": "soon",
+      "extra": null
+    }
+  ],
+  "irregularVerbs": [
+    {
+      "infinitive": "(to) be",
+      "simplePast": "was / were",
+      "pastParticiple": "been",
+      "german": [
+        "sein"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 151,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) take",
+      "simplePast": "took",
+      "pastParticiple": "taken",
+      "german": [
+        "nehmen"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 152,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) bring",
+      "simplePast": "brought",
+      "pastParticiple": "brought",
+      "german": [
+        "(mit-, her)bringen"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 152,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) come",
+      "simplePast": "came",
+      "pastParticiple": "come",
+      "german": [
+        "kommen"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 152,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) feed",
+      "simplePast": "fed",
+      "pastParticiple": "fed",
+      "german": [
+        "füttern"
+      ],
+      "unit": 1,
+      "part": "B",
+      "page": 152,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) bite",
+      "simplePast": "bit",
+      "pastParticiple": "bitten",
+      "german": [
+        "beißen"
+      ],
+      "unit": 1,
+      "part": "B",
+      "page": 153,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) mean",
+      "simplePast": "meant",
+      "pastParticiple": "meant",
+      "german": [
+        "bedeuten",
+        "meinen"
+      ],
+      "unit": 1,
+      "part": "B",
+      "page": 153,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) think",
+      "simplePast": "thought",
+      "pastParticiple": "thought",
+      "german": [
+        "denken",
+        "glauben"
+      ],
+      "unit": 1,
+      "part": "B",
+      "page": 153,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) catch",
+      "simplePast": "caught",
+      "pastParticiple": "caught",
+      "german": [
+        "fangen"
+      ],
+      "unit": 1,
+      "part": "Pet diary",
+      "page": 154,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) throw",
+      "simplePast": "threw",
+      "pastParticiple": "thrown",
+      "german": [
+        "werfen"
+      ],
+      "unit": 1,
+      "part": "Pet diary",
+      "page": 154,
+      "germanAdded": true
+    },
+    {
+      "infinitive": "(to) fall",
+      "simplePast": "fell",
+      "pastParticiple": "fallen",
+      "german": [
+        "fallen"
+      ],
+      "unit": 1,
+      "part": "Pet diary",
+      "page": 154,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) choose",
+      "simplePast": "chose",
+      "pastParticiple": "chosen",
+      "german": [
+        "aussuchen",
+        "(aus)wählen"
+      ],
+      "unit": 1,
+      "part": "Pet diary",
+      "page": 154,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) buy",
+      "simplePast": "bought",
+      "pastParticiple": "bought",
+      "german": [
+        "kaufen"
+      ],
+      "unit": 2,
+      "part": "A",
+      "page": 156,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) sell",
+      "simplePast": "sold",
+      "pastParticiple": "sold",
+      "german": [
+        "verkaufen"
+      ],
+      "unit": 2,
+      "part": "A",
+      "page": 156,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) pay",
+      "simplePast": "paid",
+      "pastParticiple": "paid",
+      "german": [
+        "bezahlen"
+      ],
+      "unit": 2,
+      "part": "A",
+      "page": 157,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) get",
+      "simplePast": "got",
+      "pastParticiple": "got",
+      "german": [
+        "bekommen"
+      ],
+      "unit": 2,
+      "part": "A",
+      "page": 157,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) eat",
+      "simplePast": "ate",
+      "pastParticiple": "eaten",
+      "german": [
+        "essen"
+      ],
+      "unit": 2,
+      "part": "B",
+      "page": 157,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) drink",
+      "simplePast": "drank",
+      "pastParticiple": "drunk",
+      "german": [
+        "trinken"
+      ],
+      "unit": 2,
+      "part": "B",
+      "page": 157,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) spend",
+      "simplePast": "spent",
+      "pastParticiple": "spent",
+      "german": [
+        "(Geld) ausgeben"
+      ],
+      "unit": 2,
+      "part": "B",
+      "page": 158,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) win",
+      "simplePast": "won",
+      "pastParticiple": "won",
+      "german": [
+        "gewinnen"
+      ],
+      "unit": 2,
+      "part": "B",
+      "page": 158,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) go",
+      "simplePast": "went",
+      "pastParticiple": "gone",
+      "german": [
+        "gehen",
+        "fahren"
+      ],
+      "unit": 2,
+      "part": "B",
+      "page": 158,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) put",
+      "simplePast": "put",
+      "pastParticiple": "put",
+      "german": [
+        "legen",
+        "stellen"
+      ],
+      "unit": 3,
+      "part": "A",
+      "page": 160,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) hang",
+      "simplePast": "hung",
+      "pastParticiple": "hung",
+      "german": [
+        "hängen",
+        "aufhängen"
+      ],
+      "unit": 3,
+      "part": "A",
+      "page": 160,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) read",
+      "simplePast": "read",
+      "pastParticiple": "read",
+      "german": [
+        "lesen"
+      ],
+      "unit": 3,
+      "part": "A",
+      "page": 160,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) see",
+      "simplePast": "saw",
+      "pastParticiple": "seen",
+      "german": [
+        "sehen"
+      ],
+      "unit": 3,
+      "part": "A",
+      "page": 160,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) sleep",
+      "simplePast": "slept",
+      "pastParticiple": "slept",
+      "german": [
+        "schlafen"
+      ],
+      "unit": 3,
+      "part": "A",
+      "page": 160,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) swim",
+      "simplePast": "swam",
+      "pastParticiple": "swum",
+      "german": [
+        "schwimmen"
+      ],
+      "unit": 3,
+      "part": "B",
+      "page": 161,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) ride a bike",
+      "simplePast": "rode a bike",
+      "pastParticiple": null,
+      "german": [
+        "Rad fahren"
+      ],
+      "unit": 3,
+      "part": "B",
+      "page": 161,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) find",
+      "simplePast": "found",
+      "pastParticiple": "found",
+      "german": [
+        "finden"
+      ],
+      "unit": 3,
+      "part": "B",
+      "page": 161,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) lose",
+      "simplePast": "lost",
+      "pastParticiple": "lost",
+      "german": [
+        "verlieren"
+      ],
+      "unit": 3,
+      "part": "B",
+      "page": 161,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) hit",
+      "simplePast": "hit",
+      "pastParticiple": "hit",
+      "german": [
+        "schlagen",
+        "treffen"
+      ],
+      "unit": 3,
+      "part": "B",
+      "page": 161,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) sing",
+      "simplePast": "sang",
+      "pastParticiple": "sung",
+      "german": [
+        "singen"
+      ],
+      "unit": 3,
+      "part": "C",
+      "page": 162,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) tell",
+      "simplePast": "told",
+      "pastParticiple": "told",
+      "german": [
+        "erzählen"
+      ],
+      "unit": 3,
+      "part": "C",
+      "page": 162,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) make",
+      "simplePast": "made",
+      "pastParticiple": "made",
+      "german": [
+        "machen"
+      ],
+      "unit": 3,
+      "part": "C",
+      "page": 163,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) build",
+      "simplePast": "built",
+      "pastParticiple": "built",
+      "german": [
+        "bauen"
+      ],
+      "unit": 3,
+      "part": "C",
+      "page": 163,
+      "germanAdded": false
+    },
+    {
+      "infinitive": "(to) wake up",
+      "simplePast": "woke up",
+      "pastParticiple": "woken up",
+      "german": [
+        "aufwachen"
+      ],
+      "unit": 3,
+      "part": "C",
+      "page": 163,
+      "germanAdded": false
+    }
+  ]
+}

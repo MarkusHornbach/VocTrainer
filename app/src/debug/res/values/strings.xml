@@ -1,0 +1,4 @@
+<resources>
+    <!-- The debug build is a separate test app next to the real one. -->
+    <string name="app_name">VocTrainer Debug</string>
+</resources>

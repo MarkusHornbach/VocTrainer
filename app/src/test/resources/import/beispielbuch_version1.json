@@ -1,0 +1,62 @@
+{
+  "format": "voctrainer-import",
+  "version": 1,
+  "bookId": "beispielbuch",
+  "bookTitle": "Beispielbuch Englisch",
+  "language": "en",
+  "entries": [
+    {
+      "english": "pet",
+      "german": [
+        "Haustier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "pet",
+      "extra": "Do you have a pet?"
+    },
+    {
+      "english": "animal",
+      "german": [
+        "Tier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "animal",
+      "extra": null
+    },
+    {
+      "english": "animal shelter",
+      "german": [
+        "Tierheim"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "shelter",
+      "extra": "We got our cat from the animal shelter."
+    }
+  ],
+  "irregularVerbs": [
+    {
+      "infinitive": "(to) be",
+      "simplePast": "was / were",
+      "pastParticiple": null,
+      "german": [
+        "sein"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 151,
+      "germanAdded": false
+    }
+  ]
+}

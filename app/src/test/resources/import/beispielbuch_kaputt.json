@@ -1,0 +1,20 @@
+{
+  "format": "voctrainer-import",
+  "version": 2,
+  "bookId": "beispielbuch",
+  "bookTitle": "Beispielbuch Englisch",
+  "language": "en",
+  "entries": [
+    {
+      "english": "pet",
+      "german": [
+        "Haustier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "coreWord": "pet",
+      "extra": "Do you have a pet?"
+    

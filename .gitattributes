@@ -1,0 +1,15 @@
+# Line endings: LF in the repository and on disk, CRLF only for Windows batch files.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.pdf binary
+*.jar binary
+*.keystore binary
+*.jks binary

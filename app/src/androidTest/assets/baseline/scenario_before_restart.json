@@ -1,0 +1,683 @@
+{
+    "format": "voctrainer-sync",
+    "version": 5,
+    "bookId": null,
+    "bookTitle": null,
+    "language": null,
+    "source": null,
+    "created": null,
+    "entries": [
+        {
+            "english": "wave",
+            "german": [
+                "Welle"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "noun",
+            "id": "9c3d011b-bfd5-4143-ac10-b0932d87acb6",
+            "leitnerLevel": 4,
+            "updatedAt": 1773835206000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835206000,
+            "coreWord": "wave",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": 1772798407000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "shell",
+            "german": [
+                "Muschel"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "noun",
+            "id": "fb406e8c-41dd-48b0-a626-edc5685952b1",
+            "leitnerLevel": 4,
+            "updatedAt": 1773835207000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835207000,
+            "coreWord": "shell",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": 1772971201000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "(to) dive",
+            "german": [
+                "tauchen"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "A",
+            "extra": null,
+            "page": 10,
+            "type": "verb",
+            "id": "88a6f4c3-4ead-465b-8395-ebcd7df714dd",
+            "leitnerLevel": 4,
+            "updatedAt": 1773835208000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835208000,
+            "coreWord": "dive",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": 1772798409000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "sandy",
+            "german": [
+                "sandig"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "A",
+            "extra": null,
+            "page": 11,
+            "type": "other",
+            "id": "6b43cae0-6279-4b5b-b368-1002247d70dd",
+            "leitnerLevel": 4,
+            "updatedAt": 1773835209000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835209000,
+            "coreWord": "sandy",
+            "highestLevel": 4,
+            "firstTypedCorrectAt": 1772798410000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "quiet",
+            "german": [
+                "leise",
+                "ruhig"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "B",
+            "extra": null,
+            "page": 11,
+            "type": "other",
+            "id": "b5d1f983-b6b5-4589-ba0c-9d2ea25ce1b2",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489601000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489601000,
+            "coreWord": "quiet",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884802000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "silent",
+            "german": [
+                "leise"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "B",
+            "extra": null,
+            "page": 11,
+            "type": "other",
+            "id": "0f6513c1-ac8b-4496-a40f-165a705a38ad",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489602000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489602000,
+            "coreWord": "silent",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884803000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "lighthouse",
+            "german": [
+                "Leuchtturm"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "B",
+            "extra": "The lighthouse is red.",
+            "page": 12,
+            "type": "noun",
+            "id": "9b1a8ec9-0d6c-4f99-8223-7977b2f2863a",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489603000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489603000,
+            "coreWord": "lighthouse",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884804000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "in the middle of the sea",
+            "german": [
+                "mitten im Meer"
+            ],
+            "unit": 1,
+            "unitTitle": "At the sea",
+            "part": "B",
+            "extra": null,
+            "page": 12,
+            "type": "phrase",
+            "id": "45b8fabb-dd21-4bfa-85ba-1511b190a932",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489604000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489604000,
+            "coreWord": "middle",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884807000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "harbour",
+            "german": [
+                "Hafen"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "A",
+            "extra": null,
+            "page": 20,
+            "type": "noun",
+            "id": "b67c10ef-5807-4d2c-80e2-b8df0bb374c2",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489605000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489605000,
+            "coreWord": "harbour",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884808000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "(to) sail",
+            "german": [
+                "segeln"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "A",
+            "extra": null,
+            "page": 20,
+            "type": "verb",
+            "id": "91e4777f-ead3-4caa-b269-78ddc375ed75",
+            "leitnerLevel": 5,
+            "updatedAt": 1773489606000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773489606000,
+            "coreWord": "sail",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772884809000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "rope",
+            "german": [
+                "Seil"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "A",
+            "extra": null,
+            "page": 20,
+            "type": "noun",
+            "id": "3df12e5b-591c-4745-b232-06898538e5b5",
+            "leitnerLevel": 1,
+            "updatedAt": 1772625601000,
+            "isDeleted": true,
+            "lastReviewedAt": 1772539212000,
+            "coreWord": "rope",
+            "highestLevel": 1,
+            "firstTypedCorrectAt": null,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "wet",
+            "german": [
+                "nass"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "B",
+            "extra": null,
+            "page": 21,
+            "type": null,
+            "id": "51d6e4c9-f2ac-4e2a-b058-def02ccc7710",
+            "leitnerLevel": 5,
+            "updatedAt": 1773576001000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773576001000,
+            "coreWord": "wet",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772971202000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "seagull",
+            "german": [
+                "Möwe"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "B",
+            "extra": null,
+            "page": 21,
+            "type": "noun",
+            "id": "03ad23b6-ba72-4dac-bf99-60f9ceabc936",
+            "leitnerLevel": 5,
+            "updatedAt": 1773576002000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773576002000,
+            "coreWord": "seagull",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772971203000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "english": "storm",
+            "german": [
+                "Sturm"
+            ],
+            "unit": 2,
+            "unitTitle": "The harbour",
+            "part": "B",
+            "extra": null,
+            "page": 21,
+            "type": "noun",
+            "id": "57edb134-18d6-4868-90fb-2900bf9aba2e",
+            "leitnerLevel": 5,
+            "updatedAt": 1773576003000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773576003000,
+            "coreWord": "storm",
+            "highestLevel": 5,
+            "firstTypedCorrectAt": 1772971204000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "irregularVerbs": [
+        {
+            "infinitive": "(to) swim",
+            "simplePast": "swam",
+            "pastParticiple": "swum",
+            "german": [
+                "schwimmen"
+            ],
+            "unit": 1,
+            "part": "A",
+            "page": 10,
+            "germanAdded": false,
+            "id": "6e6a4dd3-8f13-497d-bcea-1ad037e33bd4",
+            "leitnerLevel": 5,
+            "updatedAt": 1773835211000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835211000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "infinitive": "(to) sink",
+            "simplePast": "sank",
+            "pastParticiple": "sunk",
+            "german": [
+                "sinken"
+            ],
+            "unit": 1,
+            "part": "B",
+            "page": 12,
+            "germanAdded": false,
+            "id": "a2a6dd1b-68a3-443a-96f9-50114e698f06",
+            "leitnerLevel": 5,
+            "updatedAt": 1773835212000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773835212000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "infinitive": "(to) dig",
+            "simplePast": "dug",
+            "pastParticiple": null,
+            "german": [
+                "graben"
+            ],
+            "unit": 2,
+            "part": "A",
+            "page": 20,
+            "germanAdded": false,
+            "id": "65e92f38-3fba-4cc9-bb96-1cf8fa1f9609",
+            "leitnerLevel": 4,
+            "updatedAt": 1773230413000,
+            "isDeleted": false,
+            "lastReviewedAt": 1773230413000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "practiceDays": [
+        {
+            "date": "2026-03-03",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772539216000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-04",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772625615000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-05",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772712010000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-06",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772798411000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-07",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772884810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-08",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1772971210000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-09",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773057610000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-11",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773230410000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-12",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773316810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-13",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773403210000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-14",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773489612000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-15",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773576009000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-16",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773662410000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-17",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773748810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-18",
+            "deviceId": "baseline-device",
+            "roundsCompleted": 2,
+            "dailyGoal": 2,
+            "updatedAt": 1773835210000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "pointsDays": [
+        {
+            "date": "2026-03-03",
+            "deviceId": "baseline-device",
+            "risePoints": 14,
+            "dailyBonus": 11,
+            "startPoints": 0,
+            "updatedAt": 1772539216000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-04",
+            "deviceId": "baseline-device",
+            "risePoints": 26,
+            "dailyBonus": 12,
+            "startPoints": 0,
+            "updatedAt": 1772625615000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-05",
+            "deviceId": "baseline-device",
+            "risePoints": 24,
+            "dailyBonus": 13,
+            "startPoints": 0,
+            "updatedAt": 1772712010000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-06",
+            "deviceId": "baseline-device",
+            "risePoints": 27,
+            "dailyBonus": 14,
+            "startPoints": 0,
+            "updatedAt": 1772798411000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-07",
+            "deviceId": "baseline-device",
+            "risePoints": 24,
+            "dailyBonus": 15,
+            "startPoints": 0,
+            "updatedAt": 1772884810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-08",
+            "deviceId": "baseline-device",
+            "risePoints": 16,
+            "dailyBonus": 16,
+            "startPoints": 0,
+            "updatedAt": 1772971210000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-09",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 17,
+            "startPoints": 0,
+            "updatedAt": 1773057610000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-11",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 18,
+            "startPoints": 0,
+            "updatedAt": 1773230410000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-12",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 19,
+            "startPoints": 0,
+            "updatedAt": 1773316810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-13",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773403210000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-14",
+            "deviceId": "baseline-device",
+            "risePoints": 30,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773489612000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-15",
+            "deviceId": "baseline-device",
+            "risePoints": 15,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773576009000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-16",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773662410000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-17",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773748810000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "date": "2026-03-18",
+            "deviceId": "baseline-device",
+            "risePoints": 0,
+            "dailyBonus": 20,
+            "startPoints": 0,
+            "updatedAt": 1773835210000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "figures": [
+        {
+            "slot": 0,
+            "kind": "monster",
+            "pointsAtStart": 0,
+            "stage": 10,
+            "startedAt": 1772452816000,
+            "finishedAt": 1773835210000,
+            "updatedAt": 1773835210000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "badges": [
+        {
+            "series": "streak",
+            "tier": 1,
+            "reachedAt": 1772712010000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "series": "streak",
+            "tier": 2,
+            "reachedAt": 1773057610000,
+            "bookId": "baseline-ozean"
+        },
+        {
+            "series": "sure_words",
+            "tier": 1,
+            "reachedAt": 1772971205000,
+            "bookId": "baseline-ozean"
+        }
+    ],
+    "appVariant": "debug",
+    "appVersion": "0.14.0+2 (d2a23ab) dirty",
+    "settings": {
+        "theme": "ocean",
+        "vibration": false,
+        "autoSpeak": true,
+        "editButtonInQuiz": false,
+        "quizMode": "vocabulary",
+        "verbForms": 3,
+        "dailyGoal": 2,
+        "reminderEnabled": false,
+        "reminderMinutes": 1020,
+        "levelCapIntroDone": false,
+        "levelCapNotice": 0,
+        "levelCapCount": 0,
+        "tipsDone": [
+            "selection"
+        ]
+    },
+    "books": [
+        {
+            "id": "baseline-ozean",
+            "title": "Ozeanbuch",
+            "language": "en",
+            "isActive": true,
+            "quizFilter": "{\"unit\":\"1\"}",
+            "verbQuizFilter": null,
+            "figureSlotStart": 0
+        }
+    ]
+}

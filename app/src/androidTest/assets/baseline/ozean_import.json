@@ -1,0 +1,30 @@
+{
+  "format": "voctrainer-import",
+  "version": 2,
+  "bookId": "baseline-ozean",
+  "bookTitle": "Ozeanbuch",
+  "language": "en",
+  "source": "Invented test book",
+  "created": "2026-11-01",
+  "entries": [
+    { "english": "wave", "german": ["Welle"], "unit": 1, "unitTitle": "At the sea", "part": "A", "page": 10, "type": "noun", "coreWord": "wave" },
+    { "english": "shell", "german": ["Muschel"], "unit": 1, "unitTitle": "At the sea", "part": "A", "page": 10, "type": "noun", "coreWord": "shell" },
+    { "english": "(to) dive", "german": ["tauchen"], "unit": 1, "unitTitle": "At the sea", "part": "A", "page": 10, "type": "verb", "coreWord": "dive" },
+    { "english": "sandy", "german": ["sandig"], "unit": 1, "unitTitle": "At the sea", "part": "A", "page": 11, "type": "other", "coreWord": "sandy" },
+    { "english": "quiet", "german": ["leise", "ruhig"], "unit": 1, "unitTitle": "At the sea", "part": "B", "page": 11, "type": "other", "coreWord": "quiet" },
+    { "english": "silent", "german": ["leise"], "unit": 1, "unitTitle": "At the sea", "part": "B", "page": 11, "type": "other", "coreWord": "silent" },
+    { "english": "lighthouse", "german": ["Leuchtturm"], "unit": 1, "unitTitle": "At the sea", "part": "B", "page": 12, "type": "noun", "coreWord": "lighthouse", "extra": "The lighthouse is red." },
+    { "english": "in the middle of the sea", "german": ["mitten im Meer"], "unit": 1, "unitTitle": "At the sea", "part": "B", "page": 12, "type": "phrase", "coreWord": "middle" },
+    { "english": "harbour", "german": ["Hafen"], "unit": 2, "unitTitle": "The harbour", "part": "A", "page": 20, "type": "noun", "coreWord": "harbour" },
+    { "english": "(to) sail", "german": ["segeln"], "unit": 2, "unitTitle": "The harbour", "part": "A", "page": 20, "type": "verb", "coreWord": "sail" },
+    { "english": "rope", "german": ["Seil"], "unit": 2, "unitTitle": "The harbour", "part": "A", "page": 20, "type": "noun", "coreWord": "rope" },
+    { "english": "wet", "german": ["nass"], "unit": 2, "unitTitle": "The harbour", "part": "B", "page": 21, "coreWord": "wet" },
+    { "english": "seagull", "german": ["Möwe"], "unit": 2, "unitTitle": "The harbour", "part": "B", "page": 21, "type": "noun", "coreWord": "seagull" },
+    { "english": "storm", "german": ["Sturm"], "unit": 2, "unitTitle": "The harbour", "part": "B", "page": 21, "type": "noun", "coreWord": "storm" }
+  ],
+  "irregularVerbs": [
+    { "infinitive": "(to) swim", "simplePast": "swam", "pastParticiple": "swum", "german": ["schwimmen"], "unit": 1, "part": "A", "page": 10 },
+    { "infinitive": "(to) sink", "simplePast": "sank", "pastParticiple": "sunk", "german": ["sinken"], "unit": 1, "part": "B", "page": 12 },
+    { "infinitive": "(to) dig", "simplePast": "dug", "german": ["graben"], "unit": 2, "part": "A", "page": 20 }
+  ]
+}

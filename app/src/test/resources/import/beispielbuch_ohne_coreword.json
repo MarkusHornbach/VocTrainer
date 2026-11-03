@@ -1,0 +1,146 @@
+{
+  "format": "voctrainer-import",
+  "version": 2,
+  "bookId": "beispielbuch",
+  "bookTitle": "Beispielbuch Englisch",
+  "language": "en",
+  "entries": [
+    {
+      "english": "pet",
+      "german": [
+        "Haustier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": "Do you have a pet?"
+    },
+    {
+      "english": "animal",
+      "german": [
+        "Tier"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": null
+    },
+    {
+      "english": "animal shelter",
+      "german": [
+        "Tierheim"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": "We got our cat from the animal shelter."
+    },
+    {
+      "english": "rabbit",
+      "german": [
+        "Kaninchen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": null
+    },
+    {
+      "english": "guinea pig",
+      "german": [
+        "Meerschweinchen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": null
+    },
+    {
+      "english": "owner",
+      "german": [
+        "Besitzer/in"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "noun",
+      "extra": null
+    },
+    {
+      "english": "(to) take care of sb./sth.",
+      "german": [
+        "sich um jn./etwas kümmern"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "verb",
+      "extra": null
+    },
+    {
+      "english": "(to) promise sb. sth.",
+      "german": [
+        "jm. etwas versprechen"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "verb",
+      "coreWord": "promise",
+      "extra": null
+    },
+    {
+      "english": "lonely",
+      "german": [
+        "einsam"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "other",
+      "coreWord": "lonely",
+      "extra": "The old dog looks lonely."
+    },
+    {
+      "english": "Can we keep it?",
+      "german": [
+        "Können wir es behalten?"
+      ],
+      "unit": 1,
+      "unitTitle": "Our new pet",
+      "part": null,
+      "page": 150,
+      "type": "phrase",
+      "coreWord": "keep",
+      "extra": null
+    }
+  ],
+  "irregularVerbs": [
+    {
+      "infinitive": "(to) be",
+      "simplePast": "was / were",
+      "pastParticiple": null,
+      "german": [
+        "sein"
+      ],
+      "unit": 1,
+      "part": "A",
+      "page": 151,
+      "germanAdded": false
+    }
+  ]
+}

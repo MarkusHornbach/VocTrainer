@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VocTrainer</string>
+
+
+    <!-- Result screen -->
+    <string name="result_risen">%1$d aufgestiegen</string>
+    <string name="result_risen_dropped">%1$d aufgestiegen · %2$d zurückgefallen</string>
+</resources>
