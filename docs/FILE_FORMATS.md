@@ -142,6 +142,9 @@ books except the built-in example book; restoring it replaces the whole learning
 Every row except a book carries `bookId`, which must name a book of the file. Timestamps are epoch
 milliseconds; dates are ISO `yyyy-MM-dd`.
 
+A backup also contains the import fields `bookId`, `bookTitle`, `language`, `source` and `created` at the top level
+with the value `null`; they are ignored when restoring.
+
 ### Records
 
 | Record | Required fields | Optional fields |
@@ -184,9 +187,9 @@ value stays.
 | `reminderMinutes` | integer | minutes after midnight, 0–1439 |
 | `tipsDone` | array of strings | keys of finished tips; unknown keys are ignored |
 
-Older files may also carry the one-time notice fields `pointsIntroDone`, `pointsNotice`, `sureLevelIntroDone`,
-`sureLevelNotice`, `levelCapIntroDone`, `levelCapNotice` and `levelCapCount`; they are read and have no effect.
-The app no longer writes them.
+A file may also contain the fields `pointsIntroDone`, `pointsNotice`, `sureLevelIntroDone` and `sureLevelNotice`.
+They are accepted and have no effect; the app does not write them. The fields `levelCapIntroDone`, `levelCapNotice`
+and `levelCapCount` are written by the app and restored with the other settings; they have no visible effect.
 
 ### Example
 

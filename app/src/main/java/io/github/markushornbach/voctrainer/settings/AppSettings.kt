@@ -79,6 +79,35 @@ class AppSettings internal constructor(
 
     private fun figureShownKey(bookId: String, slot: Int) = "$KEY_FIGURE_SHOWN_STAGE${bookId}_$slot"
 
+    private val _lastReleaseNotesVersion = MutableStateFlow(devicePrefs.getString(KEY_RELEASE_NOTES_VERSION, null))
+
+    /** The version "Versionshinweise" last dealt with; device-local, in no backup. Null = none yet. */
+    val lastReleaseNotesVersion: StateFlow<String?> = _lastReleaseNotesVersion.asStateFlow()
+
+    fun setLastReleaseNotesVersion(version: String?) {
+        devicePrefs.edit { if (version == null) remove(KEY_RELEASE_NOTES_VERSION) else putString(KEY_RELEASE_NOTES_VERSION, version) }
+        _lastReleaseNotesVersion.value = version
+    }
+
+    private val _releaseNotesUpdateSimulated = MutableStateFlow(false)
+
+    /** Test app only: the next start screen acts as if the running version had its own section in the notes. */
+    val releaseNotesUpdateSimulated: StateFlow<Boolean> = _releaseNotesUpdateSimulated.asStateFlow()
+
+    /** Test app only: a test build has no section of its own, so "Versionshinweise" would never come by itself. */
+    fun simulateReleaseNotesUpdate() {
+        if (!BuildConfig.DEBUG) return
+        setLastReleaseNotesVersion(OLDER_VERSION_FOR_TEST)
+        _releaseNotesUpdateSimulated.value = true
+    }
+
+    fun endReleaseNotesUpdateSimulation() {
+        _releaseNotesUpdateSimulated.value = false
+    }
+
+    /** False keeps "Versionshinweise" from opening by itself; UI tests must not depend on the version of their build. */
+    internal var releaseNotesAutoOpen = true
+
     /** Random id of this installation; tells apart the practice and points days of devices (e.g. after a restore on a new phone). */
     val deviceId: String = devicePrefs.getString(KEY_DEVICE_ID, null)
         ?: UUID.randomUUID().toString().also { id -> devicePrefs.edit { putString(KEY_DEVICE_ID, id) } }
@@ -404,6 +433,8 @@ class AppSettings internal constructor(
 
         private const val KEY_DEVICE_ID = "device_id"
         private const val KEY_FIGURE_SHOWN_STAGE = "figure_shown_stage_"
+        private const val KEY_RELEASE_NOTES_VERSION = "release_notes_version"
+        private const val OLDER_VERSION_FOR_TEST = "0.0.0"
         internal const val KEY_DAILY_GOAL = "daily_goal"
         internal const val KEY_REMINDER_ENABLED = "reminder_enabled"
         internal const val KEY_REMINDER_MINUTES = "reminder_minutes"
@@ -443,6 +474,7 @@ class AppSettings internal constructor(
         /** UI tests only: settings in own preference files, so a test never touches the app's settings. */
         @VisibleForTesting
         internal fun replaceInstanceForTest(settings: AppSettings?) {
+            settings?.releaseNotesAutoOpen = false
             INSTANCE = settings
         }
     }

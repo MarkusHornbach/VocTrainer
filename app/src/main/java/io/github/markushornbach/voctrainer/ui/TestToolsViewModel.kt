@@ -258,6 +258,19 @@ class TestToolsViewModel(application: Application) : AndroidViewModel(applicatio
         if (BuildConfig.DEBUG) settings.simulateFirstStart()
     }
 
+    val lastReleaseNotesVersion: StateFlow<String?> = settings.lastReleaseNotesVersion
+
+    fun simulateReleaseNotesUpdate() = perform {
+        settings.simulateReleaseNotesUpdate()
+        TestToolsTexts.NOTES_UPDATE_DONE
+    }
+
+    fun clearReleaseNotesVersion() = perform {
+        settings.endReleaseNotesUpdateSimulation()
+        settings.setLastReleaseNotesVersion(null)
+        TestToolsTexts.NOTES_VERSION_CLEARED
+    }
+
     /** "Alle Tipps zurücksetzen": the same as "Tipps wieder zeigen" on the help page. */
     fun resetTips() = perform {
         settings.resetTips()
@@ -317,6 +330,12 @@ class TestToolsViewModel(application: Application) : AndroidViewModel(applicatio
 /** German snackbar texts of the page "Testwerkzeuge". */
 object TestToolsTexts {
     const val ALL_INFO_PAGES = "Alle Info-Seiten"
+    const val SIMULATE_NOTES_UPDATE = "Update simulieren (Versionshinweise)"
+    const val CLEAR_NOTES_VERSION = "Gespeicherte Version löschen"
+    const val NOTES_UPDATE_DONE = "Versionshinweise kommen auf der Startseite"
+    const val NOTES_VERSION_CLEARED = "Gespeicherte Version gelöscht"
+
+    fun releaseNotesStored(version: String?) = "Versionshinweise gespeichert: ${version ?: "keine"}"
 
     /** Info block "Avatar-Modell": [words] are the active entries of the book, [slotStart] its [io.github.markushornbach.voctrainer.data.Book.figureSlotStart]. */
     fun avatarModel(figures: List<Figure>, slotStart: Int, totalPoints: Int, words: List<QuizWord>): List<String> {

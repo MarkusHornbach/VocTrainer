@@ -84,7 +84,8 @@ fun SettingsScreen(
     onOpenAppearance: () -> Unit,
     onOpenPractice: () -> Unit,
     onOpenLearning: () -> Unit,
-    onOpenTestTools: () -> Unit
+    onOpenTestTools: () -> Unit,
+    onOpenReleaseNotes: () -> Unit
 ) {
     val theme by settings.theme.collectAsState()
     val vibration by settings.vibration.collectAsState()
@@ -117,7 +118,7 @@ fun SettingsScreen(
         if (BuildConfig.DEBUG) {
             MenuCard("Testwerkzeuge", "Avatar, Punkte, Lernlevel, Hinweise", onOpenTestTools, debug = true)
         }
-        VersionInfo()
+        VersionInfo(onOpenReleaseNotes)
     }
 }
 
@@ -229,16 +230,27 @@ private fun RestartButtonBlock(enabled: Boolean, onAsk: () -> Unit, onInfo: () -
     }
 }
 
-/** Small, muted block at the bottom of the settings menu: version and build time. */
+/** Small, muted block at the bottom of the settings menu: version and build time; a tap opens "Versionshinweise". */
 @Composable
-private fun VersionInfo() {
+private fun VersionInfo(onOpenReleaseNotes: () -> Unit) {
     val lines = remember {
         VersionText.lines(BuildConfig.VERSION_NAME, BuildConfig.BUILD_TIME, BuildConfig.DEBUG, ZoneId.systemDefault())
     }
-    Column(modifier = Modifier.padding(top = 24.dp)) {
-        lines.forEach { line ->
-            Text(line, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    Row(
+        modifier = Modifier
+            .padding(top = 24.dp)
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(8.dp))
+            .clickable(onClickLabel = ReleaseNotesTexts.OPEN_LABEL, role = Role.Button, onClick = onOpenReleaseNotes),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            Text(ReleaseNotesTexts.TITLE, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            lines.forEach { line ->
+                Text(line, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
         }
+        Icon(painterResource(R.drawable.ic_chevron_right), contentDescription = null, tint = MaterialTheme.colorScheme.primary)
     }
 }
 

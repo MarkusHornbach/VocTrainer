@@ -69,7 +69,7 @@ class DebugMarkerTest {
             VocTrainerTheme {
                 SettingsScreen(
                     settings = AppSettings.getInstance(context), onBack = {}, onOpenManageVocabulary = {},
-                    onOpenAppearance = {}, onOpenPractice = {}, onOpenLearning = {}, onOpenTestTools = {}
+                    onOpenAppearance = {}, onOpenPractice = {}, onOpenLearning = {}, onOpenTestTools = {}, onOpenReleaseNotes = {}
                 )
             }
         }

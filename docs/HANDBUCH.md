@@ -82,6 +82,9 @@ Wenn es eine neue Version gibt, installierst du sie einfach über die alte:
 
 Deine Wörter, Punkte und dein Avatar bleiben dabei erhalten.
 
+Beim nächsten Start zeigt dir die App einmal die **„Versionshinweise“**. Dort steht, was neu ist. Mit dem Pfeil
+oben links kommst du zur Startseite. Du kannst sie jederzeit wieder lesen (siehe [Gut zu wissen](#gut-zu-wissen)).
+
 > **Wichtig:** Deinstalliere die alte App **nie** vorher. Beim Deinstallieren wird dein ganzer Lernstand
 > gelöscht.
 
@@ -240,6 +243,10 @@ Beispiel „Frage 3 von 10“.
 - Willst du aufhören? Tippe oben links auf das **X**. Die App fragt **„Runde abbrechen?“**. Mit
   **„Abbrechen“** hörst du auf, mit **„Weiterspielen“** machst du weiter. Deine Antworten bis dahin
   bleiben gespeichert.
+
+Auf kleinen Bildschirmen sieht die Frage kompakter aus: Die obere Leiste fehlt, und alles rückt enger
+zusammen. Bei Verben steht dort direkt über den Antworten, welche Form gefragt ist, zum Beispiel
+**„Simple Past?“**.
 
 ### Mit Vorschlägen
 
@@ -558,7 +565,8 @@ erlauben.“**, dann erlaube die Benachrichtigungen für VocTrainer in den Einst
 
 - Die Einstellungen gelten für alle Bücher. Sie sind auch in deiner Sicherung.
 - Die App sieht immer gleich groß aus, auch wenn du die Schrift auf deinem Handy größer stellst.
-- Ganz unten steht die Version der App, zum Beispiel „Version 1.0.0“.
+- Ganz unten steht die Version der App, zum Beispiel „Version 1.0.0“. Tippe darauf, dann öffnen sich die
+  **„Versionshinweise“**: Dort siehst du, was in jeder Version neu ist.
 
 ---
 

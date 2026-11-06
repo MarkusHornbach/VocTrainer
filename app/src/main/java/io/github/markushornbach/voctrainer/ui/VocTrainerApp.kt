@@ -47,6 +47,7 @@ import io.github.markushornbach.voctrainer.settings.Tip
  */
 private enum class AppScreen {
     Quiz, Figure, Help, Settings, AppearanceSettings, PracticeSettings, LearningSettings, ManageVocabulary, VocabularyList, VocabularyEdit,
+    ReleaseNotes,
     /** Test app (debug build) only. */
     TestTools
 }
@@ -60,7 +61,10 @@ fun VocTrainerApp() {
     var screen by rememberSaveable { mutableStateOf(AppScreen.Quiz) }
     // The edit page was opened from a quiz question (edit button): closing it returns to the round.
     var editFromQuiz by rememberSaveable { mutableStateOf(false) }
+    // "Versionshinweise" opened by itself after an update: closing it returns to the start screen.
+    var releaseNotesFromStart by rememberSaveable { mutableStateOf(false) }
     val context = LocalContext.current
+    val releaseNotes = remember { loadReleaseNotes(context) }
     val settings = remember { AppSettings.getInstance(context) }
     val quizViewModel: QuizViewModel = viewModel()
     val editorViewModel: VocabularyEditorViewModel = viewModel()
@@ -77,8 +81,23 @@ fun VocTrainerApp() {
     }
 
     val firstStartDone by settings.firstStartDone.collectAsState()
+    val round by quizViewModel.round.collectAsState()
+    val selectionOpen by quizViewModel.filtersExpanded.collectAsState()
+    ReleaseNotesAfterUpdate(
+        settings = settings,
+        sections = releaseNotes,
+        idle = firstStartDone && screen == AppScreen.Quiz && round == null && !selectionOpen && tipController.shown == null,
+        onOpen = {
+            releaseNotesFromStart = true
+            quizViewModel.startVisit.end()
+            screen = AppScreen.ReleaseNotes
+        }
+    )
 
-    CompositionLocalProvider(LocalTipController provides tipController) {
+    CompositionLocalProvider(
+        LocalTipController provides tipController,
+        LocalCompactHeight provides rememberIsCompactHeight()
+    ) {
         Box(modifier = Modifier.fillMaxSize()) {
             // The first start replaces every screen; the reminder notification does not leave it.
             if (!firstStartDone) {
@@ -93,6 +112,9 @@ fun VocTrainerApp() {
                 },
                 editFromQuiz = editFromQuiz,
                 onEditFromQuiz = { editFromQuiz = it },
+                releaseNotes = releaseNotes,
+                releaseNotesFromStart = releaseNotesFromStart,
+                onReleaseNotesFromStart = { releaseNotesFromStart = it },
                 settings = settings,
                 quizViewModel = quizViewModel,
                 editorViewModel = editorViewModel
@@ -109,6 +131,9 @@ private fun AppScreens(
     onScreen: (AppScreen) -> Unit,
     editFromQuiz: Boolean,
     onEditFromQuiz: (Boolean) -> Unit,
+    releaseNotes: List<ReleaseNotesSection>,
+    releaseNotesFromStart: Boolean,
+    onReleaseNotesFromStart: (Boolean) -> Unit,
     settings: AppSettings,
     quizViewModel: QuizViewModel,
     editorViewModel: VocabularyEditorViewModel
@@ -136,7 +161,8 @@ private fun AppScreens(
                 modifier = Modifier.fillMaxSize(),
                 snackbarHost = { SnackbarHost(snackbarHostState) },
                 topBar = {
-                    AppTopBar(bookTitle = bookTitle, simulatedDate = simulatedDate) {
+                    // A low window needs the height for the question.
+                    if (!LocalCompactHeight.current || round !is QuizRoundState.Asking) AppTopBar(bookTitle = bookTitle, simulatedDate = simulatedDate) {
                         if (round !is QuizRoundState.Asking && !selectionOpen) {
                             // The closing tip "Jetzt kennst du alles Wichtige" points at "?" on the start screen.
                             IconButton(
@@ -186,7 +212,15 @@ private fun AppScreens(
             onOpenAppearance = { onScreen(AppScreen.AppearanceSettings) },
             onOpenPractice = { onScreen(AppScreen.PracticeSettings) },
             onOpenLearning = { onScreen(AppScreen.LearningSettings) },
-            onOpenTestTools = { if (BuildConfig.DEBUG) onScreen(AppScreen.TestTools) }
+            onOpenTestTools = { if (BuildConfig.DEBUG) onScreen(AppScreen.TestTools) },
+            onOpenReleaseNotes = {
+                onReleaseNotesFromStart(false)
+                onScreen(AppScreen.ReleaseNotes)
+            }
+        )
+        AppScreen.ReleaseNotes -> ReleaseNotesScreen(
+            sections = releaseNotes,
+            onBack = { onScreen(if (releaseNotesFromStart) AppScreen.Quiz else AppScreen.Settings) }
         )
         AppScreen.TestTools -> TestToolsScreen(
             onBack = { onScreen(AppScreen.Settings) },

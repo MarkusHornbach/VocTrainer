@@ -100,11 +100,13 @@ fun showsChoiceFallbackNote(level: Int, isRepeat: Boolean): Boolean =
 fun TypingFeedback(
     state: QuizRoundState.Asking,
     task: TypingTask,
-    typing: TypingState
+    typing: TypingState,
+    /** Compact layout: for the lines shown in the feedback slot, without the rest of its reserved height. */
+    linesModifier: Modifier = Modifier
 ) {
     TypingFrame(task, typing)
     // One slot of fixed height for all information, so nothing moves when it appears.
-    FeedbackSlot(state, task, typing)
+    FeedbackSlot(state, task, typing, linesModifier = linesModifier)
 }
 
 /**
@@ -145,11 +147,12 @@ fun TypingControls(
     val inputStyle = MaterialTheme.typography.titleLarge.let {
         if (inputRight) it.copy(color = answerColors.onCorrectContainer, fontWeight = FontWeight.Bold) else it
     }
+    val compact = LocalCompactHeight.current
 
     Column(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(12.dp)
+        verticalArrangement = compactSpacing(compact, normal = 12.dp, small = 8.dp)
     ) {
         if (typing.phase != TypingPhase.CHOICE) {
             NoSuggestionsTextInput {
@@ -179,7 +182,7 @@ fun TypingControls(
             // smaller on the right.
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                horizontalArrangement = compactSpacing(compact, normal = 12.dp, small = 8.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Button(
@@ -187,7 +190,7 @@ fun TypingControls(
                     enabled = typing.inputOpen,
                     modifier = Modifier
                         .weight(CHECK_BUTTON_WEIGHT)
-                        .heightIn(min = 56.dp)
+                        .heightIn(min = if (compact) 48.dp else 56.dp)
                         .testTag(QuizTags.CHECK)
                 ) {
                     Text("Prüfen", style = MaterialTheme.typography.titleMedium)
@@ -284,7 +287,13 @@ private fun TypingFrame(task: TypingTask, typing: TypingState) {
  * green. Right or wrong itself is shown by the result banner.
  */
 @Composable
-private fun FeedbackSlot(state: QuizRoundState.Asking, task: TypingTask, typing: TypingState, modifier: Modifier = Modifier) {
+private fun FeedbackSlot(
+    state: QuizRoundState.Asking,
+    task: TypingTask,
+    typing: TypingState,
+    modifier: Modifier = Modifier,
+    linesModifier: Modifier = Modifier
+) {
     val word = state.question.question.word
     val scheme = MaterialTheme.colorScheme
     val style = MaterialTheme.typography.bodyLarge
@@ -303,14 +312,7 @@ private fun FeedbackSlot(state: QuizRoundState.Asking, task: TypingTask, typing:
     fun line(text: String, color: Color = Color.Unspecified, bold: Boolean = false) =
         line(AnnotatedString(text), color, bold)
 
-    Column(
-        modifier = modifier
-            .fillMaxWidth()
-            .testTag(QuizTags.FEEDBACK)
-            .heightIn(min = lineHeight * FEEDBACK_SLOT_LINES + FEEDBACK_SLOT_SPACING * (FEEDBACK_SLOT_LINES - 1)),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(FEEDBACK_SLOT_SPACING)
-    ) {
+    val lines: @Composable () -> Unit = {
         when (typing.phase) {
             TypingPhase.TYPING -> {
                 if (typing.emptyHint) line(EMPTY_INPUT_HINT, scheme.error)
@@ -368,6 +370,24 @@ private fun FeedbackSlot(state: QuizRoundState.Asking, task: TypingTask, typing:
                 }
             }
             TypingPhase.CHOICE -> Unit
+        }
+    }
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .testTag(QuizTags.FEEDBACK)
+            .heightIn(min = lineHeight * FEEDBACK_SLOT_LINES + FEEDBACK_SLOT_SPACING * (FEEDBACK_SLOT_LINES - 1)),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(FEEDBACK_SLOT_SPACING)
+    ) {
+        if (LocalCompactHeight.current) {
+            Column(
+                modifier = linesModifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(FEEDBACK_SLOT_SPACING)
+            ) { lines() }
+        } else {
+            lines()
         }
     }
 }

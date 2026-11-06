@@ -125,7 +125,7 @@ class ManageProgressTest {
             VocTrainerTheme {
                 SettingsScreen(
                     settings = settings, onBack = {}, onOpenManageVocabulary = {},
-                    onOpenAppearance = {}, onOpenPractice = {}, onOpenLearning = {}, onOpenTestTools = {}
+                    onOpenAppearance = {}, onOpenPractice = {}, onOpenLearning = {}, onOpenTestTools = {}, onOpenReleaseNotes = {}
                 )
             }
         }

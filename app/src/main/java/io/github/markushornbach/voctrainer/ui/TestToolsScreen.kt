@@ -483,6 +483,16 @@ private fun HelpGroup(viewModel: TestToolsViewModel, quizViewModel: QuizViewMode
         tag = "testHelp_firstStart"
     ) { OutlinedButton(onClick = viewModel::simulateFirstStart) { Text("Erster Start simulieren") } }
     AllInfoPages(quizViewModel)
+    val lastNotes by viewModel.lastReleaseNotesVersion.collectAsState()
+    Text(TestToolsTexts.releaseNotesStored(lastNotes), style = MaterialTheme.typography.bodyMedium)
+    WithHelp(
+        "Stellt eine ältere Version ein. Beim nächsten Besuch der Startseite öffnen sich die Versionshinweise einmal.",
+        tag = "testHelp_notesUpdate"
+    ) { OutlinedButton(onClick = viewModel::simulateReleaseNotesUpdate) { Text(TestToolsTexts.SIMULATE_NOTES_UPDATE) } }
+    WithHelp(
+        "Löscht die gespeicherte Version. Die Test-App hat meist keinen eigenen Abschnitt: Sie merkt sich die Version dann ohne Anzeige.",
+        tag = "testHelp_notesClear"
+    ) { OutlinedButton(onClick = viewModel::clearReleaseNotesVersion) { Text(TestToolsTexts.CLEAR_NOTES_VERSION) } }
     val markCorrect by viewModel.markCorrectAnswer.collectAsState()
     Row(
         modifier = Modifier

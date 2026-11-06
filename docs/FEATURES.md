@@ -145,6 +145,19 @@ Learner-facing texts never mention due dates ("fällig") or review intervals; th
 - **Question layout:** fixed header („Frage n von m“ / „Wiederholung“), the word at the top, the answer part
   at the bottom right above the keyboard. Nothing moves when an answer is given; all places for messages are
   reserved. Only the upper part scrolls if the screen is too small.
+- **Compact question layout on small screens** (window height below 760 dp; decided by the window height alone, so
+  it never changes with the keyboard or an answer; taller screens are not affected):
+
+| Part | Compact layout |
+|---|---|
+| Top bar (app name, book) | hidden during a question |
+| Header (X, „Frage n von m“) | one slim row; X and its dialog work as usual |
+| Question text | smaller, same size in both answer types |
+| Buttons and spacing | answers, „Prüfen“ and „Nochmal versuchen“ lower, less spacing and padding; the places for the result and „Nochmal versuchen“ stay reserved, only smaller |
+| Verb questions | the asked form stands directly above the answers: „Simple Past?“ or, in step 2 of „3 Formen“, „Past Participle?“. It replaces the instruction line |
+| Upper part | its bottom edge fades out while more content lies below it |
+| Wrong typed answer | the upper part scrolls just far enough to show the correct word and the copy instruction; the German text stays reachable by scrolling |
+
 - **Direction by level:** levels 0–1 English → German, from level 2 German → English (decided when the word
   is picked; a repetition keeps it).
 - **With suggestions** („Mit Vorschlägen“): four answers. English → German: the main meaning and three wrong
@@ -353,8 +366,30 @@ the first correctly typed first attempt is stored once per word (not shown, part
   - **"Üben":** **„Verbformen“** with „2 Formen (go – went)“ (default) and „3 Formen (go – went – gone)“
     (see Irregular verbs); the card shows „Verbformen: 2 Formen“ or „Verbformen: 3 Formen“.
   - **"Tagesziel & Erinnerung":** daily goal and reminder time.
-- Version and build time at the bottom (e.g. „Version 1.0.0+3 (abc1234)“, „Erstellt am … · Debug“).
+- Version and build time at the bottom (e.g. „Version 1.0.0+3 (abc1234)“, „Erstellt am … · Debug“). Tapping this
+  block opens **„Versionshinweise“** (release notes).
 - **Fixed UI scale:** the app ignores the system font size and display size, so every screen fits.
+
+### „Versionshinweise“ (release notes)
+
+The page lists all versions from `RELEASE_NOTES.md`, which is bundled into the app when it is built, newest
+first: heading „Version X.Y.Z“, date, bullet points. Release candidates appear like any other version. Without
+readable notes the page says „Gerade gibt es hier nichts zu lesen.“
+
+The page also opens by itself once. This is decided on the start screen, from the version stored for the page:
+
+| Situation | Opens by itself | Stored version afterwards |
+|---|---|---|
+| Fresh installation (nothing stored, first start not finished) | no | running version |
+| Same version as stored | no | unchanged |
+| Other version with its own section, also a patch version | yes | running version |
+| First update from a version without this page (nothing stored, first start finished) | yes, if it has its own section | running version |
+| Other version without its own section (e.g. a local build) | no | running version |
+| Other version stored while the first start is not finished | after the first start | running version |
+
+It waits while a round, the selection screen or a tip is open. A tip that is due comes after the page is closed.
+Back from the automatic page leads to the start screen, back from the settings entry to the settings. The stored
+version is device state: it is in neither the backup file nor Android's backup.
 
 ## Backup and restore
 

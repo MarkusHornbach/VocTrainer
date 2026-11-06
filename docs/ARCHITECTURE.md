@@ -27,6 +27,12 @@ Technical overview of VocTrainer. What the app does: [FEATURES.md](FEATURES.md).
 Rules live in `learning` as constants (intervals, round size, thresholds), so screens, info pages and the
 round report all read the same values.
 
+The question screen has a compact layout for low windows. The one decision is `isCompactHeight` in
+`ui/CompactHeight.kt` (threshold `COMPACT_HEIGHT_THRESHOLD_DP`, 760 dp: below it a Nexus 5X with 731 dp, above it
+Pixel 8a and Pixel 10). It uses the height of the window, which stays the same when the keyboard opens, never the
+keyboard inset or the answer state. `VocTrainerApp` provides it as `LocalCompactHeight`; only the top bar during a
+question and the question screen read it, and every difference sits behind it.
+
 ## Data model
 
 | Entity (table) | Key | Purpose |
@@ -67,6 +73,10 @@ combined without double counting. Settings that belong to a vocabulary set are s
   more, or N is 99 or more.
 - Without Git the build still works (`unbekannt`, code 1).
 - `BuildConfig.BUILD_TIME` holds the build time; the settings screen shows version and build time.
+- `RELEASE_NOTES.md` in the repository root is copied into the assets of every variant at build time (task
+  `copy<Variant>ReleaseNotes`); the build fails with a clear message if it is missing. `ui/ReleaseNotes.kt` holds
+  its parser and the rule for opening the page by itself. The version last handled is stored in the `device`
+  preferences, which no backup contains.
 - Releases are annotated tags `vMAJOR.MINOR.PATCH` on `main`; release candidates are tagged `vMAJOR.MINOR.PATCH-rcN`.
 
 ## Build and test

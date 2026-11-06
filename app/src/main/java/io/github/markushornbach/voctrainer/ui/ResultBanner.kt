@@ -18,6 +18,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import io.github.markushornbach.voctrainer.ui.theme.LocalAnswerColors
 
@@ -56,14 +57,20 @@ fun answerResult(state: QuizRoundState.Asking): AnswerResult? {
  * Announced by TalkBack when it changes. [maxLines] 2 lets it wrap in the narrow place next to "Prüfen".
  */
 @Composable
-fun ResultBanner(result: AnswerResult?, modifier: Modifier = Modifier, maxLines: Int = 1) {
+fun ResultBanner(
+    result: AnswerResult?,
+    modifier: Modifier = Modifier,
+    maxLines: Int = 1,
+    /** Smaller in the compact layout. */
+    verticalPadding: Dp = BANNER_PADDING
+) {
     val answerColors = LocalAnswerColors.current
     val scheme = MaterialTheme.colorScheme
     val style = MaterialTheme.typography.titleMedium
     val lineHeight = with(LocalDensity.current) { style.lineHeight.toDp() }
     Box(
         modifier = modifier
-            .heightIn(min = lineHeight + BANNER_PADDING * 2)
+            .heightIn(min = lineHeight + verticalPadding * 2)
             .testTag(QuizTags.RESULT)
             .clearAndSetSemantics {
                 liveRegion = LiveRegionMode.Polite
@@ -84,7 +91,7 @@ fun ResultBanner(result: AnswerResult?, modifier: Modifier = Modifier, maxLines:
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
                 maxLines = maxLines,
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = BANNER_PADDING)
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = verticalPadding)
             )
         }
     }

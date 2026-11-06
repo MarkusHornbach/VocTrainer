@@ -62,5 +62,7 @@ and density) and the **date bar**; below it collapsible groups with „Alle aufk
 | **„Erster Start simulieren“** | Shows welcome, book choice and avatar choice again without deleting data |
 | **„Alle Tipps zurücksetzen“** | Like „Tipps wieder zeigen“ |
 | **„Alle Info-Seiten“** | Opens every info page with the current data |
+| **„Update simulieren (Versionshinweise)“** | Stores an older version and treats the running one as having its own section (a test build usually has none), so „Versionshinweise“ opens once at the next visit of the start screen |
+| **„Gespeicherte Version löschen“** | Removes the stored version shown in the line above the buttons; without an own section the test app then stores its version again silently |
 | Switch **„Richtige Antwort markieren“** | A small dot on the correct option before answering |
 | **„Prüfung testen“** | Type an answer for any entry and see what the checker makes of it („Richtig“, „Auch richtig“, „Fast richtig – …“, „Falsch – …“ with the reason); changes nothing |

@@ -198,11 +198,33 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
 
+// RELEASE_NOTES.md in the repository root is the only source of the page "Versionshinweise".
+abstract class CopyReleaseNotes : DefaultTask() {
+    // Not @InputFile: a missing file should reach the clear message below.
+    @get:InputFiles
+    @get:PathSensitive(PathSensitivity.NONE)
+    abstract val notes: ConfigurableFileCollection
+
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
+
+    @TaskAction
+    fun copy() {
+        val source = notes.singleFile
+        if (!source.isFile) throw GradleException("VocTrainer: ${source.path} is missing, the app needs it for \"Versionshinweise\"")
+        source.copyTo(outputDir.file(source.name).get().asFile, overwrite = true)
+    }
+}
+
 androidComponents {
     onVariants { variant ->
         variant.buildConfigFields?.put(
             "BUILD_TIME",
             buildTime.map { BuildConfigField("long", "${it}L", "Build date and time (epoch millis)") }
         )
+        val copyNotes = tasks.register<CopyReleaseNotes>("copy${variant.name.replaceFirstChar(Char::uppercase)}ReleaseNotes") {
+            notes.from(rootProject.file("RELEASE_NOTES.md"))
+        }
+        variant.sources.assets?.addGeneratedSourceDirectory(copyNotes, CopyReleaseNotes::outputDir)
     }
 }

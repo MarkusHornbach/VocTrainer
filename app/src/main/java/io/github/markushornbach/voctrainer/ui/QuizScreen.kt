@@ -64,7 +64,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.layout.LayoutCoordinates
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.layout.positionInWindow
+import androidx.compose.runtime.withFrameNanos
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -208,7 +212,13 @@ fun QuizScreen(
                     null
                 },
                 onClose = { confirmCancel = true },
-                modifier = contentModifier
+                modifier = if (LocalCompactHeight.current) {
+                    modifier
+                        .fillMaxSize()
+                        .padding(start = 16.dp, end = 16.dp, top = 4.dp, bottom = 8.dp)
+                } else {
+                    contentModifier
+                }
             )
         }
         is QuizRoundState.Finished -> {
@@ -801,6 +811,7 @@ object QuizTags {
     const val FEEDBACK = "quiz_feedback"
     const val VERB_STEPS = "quiz_verb_steps"
     const val FIRST_STEP_MISSED = "quiz_first_step_missed"
+    const val VERB_FORM_LABEL = "quiz_verb_form_label"
 
     /** Test app only: the edit pencil in the question header. */
     const val EDIT_BUTTON = "quiz_edit_button"
@@ -830,12 +841,13 @@ private fun QuizQuestion(
     val typingTask = question.typing
     // Typing (before "Mit Vorschlägen"); after it the question looks like any question with suggestions.
     val typingLayout = typing != null && typingTask != null && typing.phase != TypingPhase.CHOICE
+    val compact = LocalCompactHeight.current
     // One structure for every question: a fixed header, the word at the top and the answer part at the
     // bottom, lifted above the keyboard. Only the answer part follows the keyboard; the Scaffold padding
     // already includes the navigation bar.
     Column(
         modifier = modifier.windowInsetsPadding(WindowInsets.ime.exclude(WindowInsets.navigationBars)),
-        verticalArrangement = Arrangement.spacedBy(12.dp)
+        verticalArrangement = compactSpacing(compact, normal = 12.dp, small = 6.dp)
     ) {
         QuestionHeader(state, onEdit, onClose)
         // Top-aligned, so the word stays in the same place in every phase and mode; it scrolls only inside
@@ -845,51 +857,90 @@ private fun QuizQuestion(
         // scrolls to its end, so the correct word below the frame is visible for copying; again when the hint
         // after a wrong copy appears.
         val copying = typing?.phase == TypingPhase.COPYING
-        LaunchedEffect(state.question, copying, typing?.copyMismatch) {
-            if (copying && topScroll.maxValue > 0) topScroll.animateScrollTo(topScroll.maxValue)
+        // Compact: the place of the upper part and of the feedback lines, to scroll just as far as the lines need
+        // (the end of the slot may be empty); again when the keyboard changes the height of the upper part.
+        val viewport = remember(state.question) { arrayOfNulls<LayoutCoordinates>(1) }
+        val feedbackLines = remember(state.question) { arrayOfNulls<LayoutCoordinates>(1) }
+        var viewportHeight by remember(state.question) { mutableIntStateOf(0) }
+        LaunchedEffect(state.question, copying, typing?.copyMismatch, viewportHeight) {
+            if (!compact) {
+                if (copying && topScroll.maxValue > 0) topScroll.animateScrollTo(topScroll.maxValue)
+            } else if (copying) {
+                // The lines of the new phase are laid out in the coming frames.
+                repeat(2) { withFrameNanos { } }
+                val top = viewport[0]?.takeIf { it.isAttached } ?: return@LaunchedEffect
+                val lines = feedbackLines[0]?.takeIf { it.isAttached } ?: return@LaunchedEffect
+                topScroll.animateScrollTo(
+                    compactCopyScrollTarget(
+                        current = topScroll.value,
+                        linesBottom = lines.positionInWindow().y + lines.size.height,
+                        viewportBottom = top.positionInWindow().y + top.size.height,
+                        max = topScroll.maxValue
+                    )
+                )
+            }
         }
         Column(
             modifier = Modifier
                 .testTag(QuizTags.TOP)
                 .weight(1f)
                 .fillMaxWidth()
+                .then(
+                    if (compact) {
+                        Modifier
+                            .onGloballyPositioned { viewport[0] = it }
+                            .onSizeChanged { viewportHeight = it.height }
+                            .compactFadeEdge(topScroll)
+                    } else {
+                        Modifier
+                    }
+                )
                 .verticalScroll(topScroll),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            verticalArrangement = compactSpacing(compact, normal = 12.dp, small = 6.dp)
         ) {
             Row(
-                modifier = Modifier.heightIn(min = 48.dp),
+                modifier = Modifier.heightIn(min = if (compact) 40.dp else 48.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center
             ) {
                 Text(
                     text = question.prompt,
-                    style = MaterialTheme.typography.headlineMedium,
+                    // The same style in both answer types.
+                    style = if (compact) MaterialTheme.typography.headlineSmall else MaterialTheme.typography.headlineMedium,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .weight(1f, fill = false)
                         .testTag(QuizTags.PROMPT)
                 )
                 if (speakerSlot) {
-                    IconButton(onClick = onSpeak, modifier = Modifier.testTag(QuizTags.SPEAKER)) {
-                        Icon(painterResource(R.drawable.ic_volume_up), contentDescription = "Vorsprechen")
+                    SlimIconButtons(compact) {
+                        IconButton(onClick = onSpeak, modifier = Modifier.testTag(QuizTags.SPEAKER)) {
+                            Icon(painterResource(R.drawable.ic_volume_up), contentDescription = "Vorsprechen")
+                        }
                     }
                 }
             }
             question.subtitle?.let {
                 Text(text = it, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
             }
-            question.instruction?.let {
-                Text(
-                    text = it,
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    textAlign = TextAlign.Center
-                )
+            // Compact: the label of the asked form above the answers takes the place of this line.
+            if (!compact) {
+                question.instruction?.let {
+                    Text(
+                        text = it,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        textAlign = TextAlign.Center
+                    )
+                }
             }
             if (question.secondStep != null) VerbSteps(state)
             if (typingLayout) {
-                TypingFeedback(state, typingTask, typing)
+                TypingFeedback(
+                    state, typingTask, typing,
+                    linesModifier = Modifier.onGloballyPositioned { feedbackLines[0] = it }
+                )
             } else {
                 ChoiceFeedback(state)
             }
@@ -898,7 +949,7 @@ private fun QuizQuestion(
             modifier = Modifier
                 .testTag(QuizTags.BOTTOM)
                 .fillMaxWidth(),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            verticalArrangement = compactSpacing(compact, normal = 12.dp, small = 8.dp)
         ) {
             if (typingLayout) {
                 TypingControls(
@@ -927,23 +978,26 @@ private fun QuestionHeader(state: QuizRoundState.Asking, onEdit: (() -> Unit)?, 
             .testTag(QuizTags.HEADER),
         contentAlignment = Alignment.Center
     ) {
-        IconButton(onClick = onClose, modifier = Modifier.align(Alignment.CenterStart)) {
-            Icon(painterResource(R.drawable.ic_close), contentDescription = "Runde abbrechen")
-        }
-        val repeat = state.question.isRepeat
-        Text(
-            text = if (repeat) "Wiederholung"
-            else "Frage ${state.question.number} von ${state.totalWords}",
-            style = MaterialTheme.typography.labelLarge,
-            // The tip "Wiederholung" points at the label of the first repetition.
-            modifier = if (repeat) Modifier.tipTarget(Tip.REPEAT, key = state.question) else Modifier
-        )
-        if (onEdit != null) {
-            IconButton(
-                onClick = onEdit,
-                modifier = Modifier.align(Alignment.CenterEnd).debugOutline().testTag(QuizTags.EDIT_BUTTON)
-            ) {
-                Icon(painterResource(R.drawable.ic_edit), contentDescription = "Vokabel bearbeiten", tint = TestOrange)
+        // Compact: one slim row.
+        SlimIconButtons(LocalCompactHeight.current) {
+            IconButton(onClick = onClose, modifier = Modifier.align(Alignment.CenterStart)) {
+                Icon(painterResource(R.drawable.ic_close), contentDescription = "Runde abbrechen")
+            }
+            val repeat = state.question.isRepeat
+            Text(
+                text = if (repeat) "Wiederholung"
+                else "Frage ${state.question.number} von ${state.totalWords}",
+                style = MaterialTheme.typography.labelLarge,
+                // The tip "Wiederholung" points at the label of the first repetition.
+                modifier = if (repeat) Modifier.tipTarget(Tip.REPEAT, key = state.question) else Modifier
+            )
+            if (onEdit != null) {
+                IconButton(
+                    onClick = onEdit,
+                    modifier = Modifier.align(Alignment.CenterEnd).debugOutline().testTag(QuizTags.EDIT_BUTTON)
+                ) {
+                    Icon(painterResource(R.drawable.ic_edit), contentDescription = "Vokabel bearbeiten", tint = TestOrange)
+                }
             }
         }
     }
@@ -954,11 +1008,25 @@ object VerbStepTexts {
     const val SIMPLE_PAST = "simple past"
     const val PAST_PARTICIPLE = "past participle"
 
+    /** Compact layout: the asked form, directly above the answers ([verbFormLabel]). */
+    const val SIMPLE_PAST_LABEL = "Simple Past?"
+    const val PAST_PARTICIPLE_LABEL = "Past Participle?"
+
     /** Second step right, but the first answer of the first step was wrong: why the verb does not rise. */
     const val FIRST_STEP_MISSED = "Das Simple Past war noch nicht richtig."
 
     /** Not found yet. */
     const val OPEN = "?"
+}
+
+/**
+ * The form asked right now, in the compact layout: every verb question has an instruction line (with both "2
+ * Formen" and "3 Formen"), which this label replaces there. Null for a vocabulary question.
+ */
+internal fun verbFormLabel(instruction: String?, inSecondStep: Boolean): String? = when {
+    instruction == null -> null
+    inSecondStep -> VerbStepTexts.PAST_PARTICIPLE_LABEL
+    else -> VerbStepTexts.SIMPLE_PAST_LABEL
 }
 
 /**
@@ -1056,6 +1124,7 @@ private fun ChoiceOptions(
     val context = LocalContext.current
     val answerVibration = remember(context) { AnswerVibration(context) }
     val shake = remember(state.question) { Animatable(0f) }
+    val compact = LocalCompactHeight.current
 
     LaunchedEffect(state.question, selectedIndex) {
         if (selectedIndex == null) return@LaunchedEffect
@@ -1074,6 +1143,21 @@ private fun ChoiceOptions(
         }
     }
 
+    if (compact) {
+        // One line from the start of the question, in the same place in both steps; it never scrolls away.
+        verbFormLabel(state.question.question.instruction, state.inSecondStep)?.let { label ->
+            Text(
+                text = label,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
+                maxLines = 1,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag(QuizTags.VERB_FORM_LABEL)
+            )
+        }
+    }
     state.options.forEachIndexed { index, option ->
         val (container, content) = when {
             !answered -> answerColors.optionContainer to answerColors.onOptionContainer
@@ -1099,7 +1183,7 @@ private fun ChoiceOptions(
             ),
             modifier = shakeModifier
                 .fillMaxWidth()
-                .heightIn(min = 64.dp)
+                .heightIn(min = if (compact) 52.dp else 64.dp)
         ) {
             if (markCorrect && !answered && index == correctIndex) {
                 Box(
@@ -1113,18 +1197,23 @@ private fun ChoiceOptions(
             Text(text = option, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
         }
     }
-    ResultBanner(answerResult(state), Modifier.fillMaxWidth())
+    if (compact) {
+        ResultBanner(answerResult(state), Modifier.fillMaxWidth(), verticalPadding = 2.dp)
+    } else {
+        ResultBanner(answerResult(state), Modifier.fillMaxWidth())
+    }
+    val retryHeight = if (compact) 48.dp else 56.dp
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .heightIn(min = 56.dp)
+            .heightIn(min = retryHeight)
     ) {
         if (phase == AnswerPhase.SOLUTION) {
             Button(
                 onClick = onRetry,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .heightIn(min = 56.dp)
+                    .heightIn(min = retryHeight)
             ) {
                 Text("Nochmal versuchen", style = MaterialTheme.typography.titleMedium)
             }
