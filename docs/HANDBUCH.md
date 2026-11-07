@@ -56,7 +56,8 @@ Alles bleibt auf deinem Handy. Du brauchst kein Konto und kein Internet zum Übe
 
 ## 1. Installation
 
-VocTrainer gibt es nicht im Play Store. Du lädst die App selbst herunter.
+VocTrainer gibt es nicht im Play Store. Du lädst die App selbst herunter. Eine kurze Anleitung, auch für
+Family Link, steht auf der [Webseite der App](https://markushornbach.github.io/VocTrainer/).
 
 ### App installieren
 
@@ -65,9 +66,10 @@ VocTrainer gibt es nicht im Play Store. Du lädst die App selbst herunter.
 2. Dort steht die neueste Version ganz oben.
 3. Tippe auf die Datei, die auf **.apk** endet (zum Beispiel `VocTrainer-1.0.0.apk`). Sie wird heruntergeladen.
 4. Öffne die Datei, zum Beispiel über die Meldung „Download abgeschlossen“ oder in der App „Dateien“.
-5. Android fragt vielleicht, ob du Apps aus dieser Quelle installieren darfst. Tippe auf **Einstellungen**
-   und schalte **„Aus dieser Quelle zulassen“** ein. Die Wörter können auf deinem Handy etwas anders heißen.
-6. Gehe zurück und tippe auf **Installieren**.
+5. Android fragt vielleicht, ob dein Browser Apps installieren darf. Auf neueren Handys tippst du auf
+   **Nur dieses Mal**. Auf anderen Handys tippst du auf **Einstellungen**, schaltest den Schalter für deinen
+   Browser ein und gehst zurück. Die Wörter können auf deinem Handy etwas anders heißen.
+6. Tippe auf **Installieren**.
 
 Danach findest du VocTrainer bei deinen Apps.
 

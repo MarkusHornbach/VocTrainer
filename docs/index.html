@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VocTrainer – Englisch-Vokabeln lernen</title>
+<meta name="description" content="VocTrainer ist eine kostenlose Android-App zum Lernen von Englisch-Vokabeln. Hier gibt es die App und eine Anleitung zur Installation, auch mit Family Link.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234F46B8'/%3E%3Cpath d='M8 8l8 17 8-17' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f8f7fe;
+  --surface: #eeedfe;
+  --text: #1c1747;
+  --muted: #4a4578;
+  --link: #4f46b8;
+  --button: #4f46b8;
+  --on-button: #ffffff;
+  --accent: #1e5d4b;
+  --border: #cbc7f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1648;
+    --surface: #2b2565;
+    --text: #eeedfe;
+    --muted: #cbc7f5;
+    --link: #c4bff8;
+    --button: #7f77dd;
+    --on-button: #15103f;
+    --accent: #5dcaa5;
+    --border: #4a4398;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+.page { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1rem 2rem; }
+header { text-align: center; text-wrap: balance; }
+h1 { margin: 0; font-size: 2.25rem; line-height: 1.2; }
+.tagline { margin: .25rem 0 1.25rem; font-weight: 600; color: var(--muted); }
+h2 {
+  margin: 2.5rem 0 .75rem;
+  padding-bottom: .35rem;
+  border-bottom: 3px solid var(--accent);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  scroll-margin-top: 1rem;
+}
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: .6rem; }
+a { color: var(--link); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+img { display: block; max-width: 100%; height: auto; }
+.shots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.shots li { flex: 1 1 96px; max-width: 220px; margin: 0; }
+.shots img, .step-image { border: 1px solid var(--border); border-radius: 12px; }
+.step-image { width: 100%; max-width: 270px; margin-top: .75rem; }
+.step-figure { margin: 0; max-width: 270px; }
+.step-figure figcaption { margin-top: .35rem; color: var(--muted); font-size: .9375rem; }
+.download {
+  display: block;
+  max-width: 26rem;
+  margin: 0 auto .75rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: var(--button);
+  color: var(--on-button);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+}
+.note { color: var(--muted); }
+nav {
+  margin: 1.5rem 0 0;
+  padding: .875rem 1rem;
+  border-radius: 12px;
+  background: var(--surface);
+}
+nav h2 { margin: 0 0 .25rem; padding: 0; border: 0; font-size: 1.0625rem; }
+nav ul { margin: 0; padding: 0; list-style: none; }
+nav li { margin: 0; }
+nav a { display: block; padding: .3rem 0; }
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: .9375rem;
+}
+footer p { margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <h1>VocTrainer</h1>
+  <p class="tagline">Englisch-Vokabeln lernen, Schritt für Schritt</p>
+  <ul class="shots">
+    <li><img src="images/02_startseite.png" width="420" height="933" alt="Startseite der App mit dem Knopf Los geht’s und dem Avatar"></li>
+    <li><img src="images/05_frage_tippen.png" width="420" height="933" alt="Eine Frage in der App, bei der das englische Wort getippt wird"></li>
+    <li><img src="images/07_avatar.png" width="420" height="933" alt="Seite des Avatars in der App"></li>
+  </ul>
+  <a class="download" href="https://github.com/MarkusHornbach/VocTrainer/releases/download/v1.1.1/VocTrainer-1.1.1.apk">Herunterladen – Version 1.1.1</a>
+  <p class="note">Für Android-Handys ab Android&nbsp;8. Nicht für iPhone. Kostenlos.</p>
+</header>
+
+<nav aria-labelledby="inhalt">
+  <h2 id="inhalt">Inhalt</h2>
+  <ul>
+    <li><a href="#app">Was kann die App?</a></li>
+    <li><a href="#sicher">Ist das sicher?</a></li>
+    <li><a href="#installieren">So installierst du die App</a></li>
+    <li><a href="#family-link">Mit Family Link</a></li>
+    <li><a href="#vokabeln">Vokabeln aus dem Buch</a></li>
+    <li><a href="#hilfe">Es klappt nicht?</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2 id="app">Was kann die App?</h2>
+    <p>VocTrainer fragt Vokabeln in kurzen Runden ab. Am Anfang wählst du die Antwort aus Vorschlägen, später tippst du das englische Wort selbst. Jedes Wort steigt Stufe für Stufe auf, bis es gelernt ist. Wörter, die noch nicht sitzen, kommen öfter dran.</p>
+    <p>Für das Üben gibt es Punkte. Damit wächst ein Avatar (Drache, Monster oder Kämpfer). Dazu kommen Abzeichen, ein Tagesziel und eine Serie für jeden Tag, an dem du übst. Unregelmäßige Verben können extra geübt werden.</p>
+    <p>Ein Beispielbuch ist schon eingebaut, so könnt ihr die App sofort ausprobieren. Die Vokabeln für euer eigenes Buch kommen als Datei, die ihr in der App importiert.</p>
+  </section>
+
+  <section>
+    <h2 id="sicher">Ist das sicher?</h2>
+    <p><strong>Warum warnt das Handy?</strong> Android warnt bei jeder App, die nicht aus dem Play Store kommt. Die Warnung sagt: „Diese Quelle kenne ich nicht.“ Sie sagt nichts darüber, was die App macht. VocTrainer ist ein kostenloses Hobbyprojekt und wird deshalb nicht über den Play Store verteilt.</p>
+    <p><strong>Was die App nicht kann:</strong></p>
+    <ul>
+      <li>Sie hat keinen Zugang zum Internet. Sie kann also nichts verschicken.</li>
+      <li>Kein Konto, keine Anmeldung, keine Werbung, keine Käufe.</li>
+      <li>Der Lernstand bleibt auf dem Handy. Nur wenn auf dem Handy die normale Android-Sicherung eingeschaltet ist, sichert Android ihn mit, wie bei jeder anderen App auch.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="installieren">So installierst du die App</h2>
+    <p>Das dauert etwa zwei Minuten. Die Meldungen sehen je nach Handy etwas anders aus.</p>
+    <ol>
+      <li><strong>Herunterladen:</strong> Tippe oben auf „Herunterladen“. Der Browser fragt vielleicht, ob du die Datei wirklich laden willst. Tippe auf „Trotzdem herunterladen“ (oder ähnlich).</li>
+      <li><strong>Öffnen:</strong> Tippe nach dem Download auf „Öffnen“, oder öffne die Datei über die Benachrichtigung.</li>
+      <li><strong>Erlauben:</strong> Android fragt, ob dein Browser Apps installieren darf. Auf neueren Handys tippst du auf „Nur dieses Mal“. Auf anderen Handys tippst du auf „Einstellungen“, schaltest den Schalter für deinen Browser ein und gehst zurück.
+        <figure class="step-figure">
+          <img class="step-image" src="images/install_02_erlauben.png" width="540" height="744" loading="lazy" alt="Meldung von Android: Erlauben, dass Chrome Apps installiert? Darunter die Knöpfe Nur dieses Mal, Immer erlauben und Nicht erlauben.">
+          <figcaption>So sieht es auf neueren Handys aus.</figcaption>
+        </figure></li>
+      <li><strong>Installieren:</strong> Tippe auf „Installieren“.</li>
+      <li><strong>Prüfen lassen:</strong> Vielleicht bietet Google Play Protect an, die App zu prüfen. Das kannst du ruhig machen.</li>
+      <li><strong>Fertig:</strong> Tippe auf „Öffnen“. Die App heißt VocTrainer.</li>
+    </ol>
+    <p><strong>Danach:</strong> Wenn du den Schalter eingeschaltet hast, kannst du ihn wieder ausschalten: in den Einstellungen unter Apps → dein Browser → „Unbekannte Apps installieren“ (auf manchen Handys heißt es etwas anders). Für ein späteres Update musst du ihn kurz wieder einschalten.</p>
+    <p><strong>Updates:</strong> Eine neue Version installierst du einfach über die alte. Lösch die App vorher nicht, sonst ist der ganze Lernstand weg.</p>
+  </section>
+
+  <section>
+    <h2 id="family-link">Mit Family Link</h2>
+    <p>Bei einem Kinderkonto mit Family Link darf das Kind die Erlaubnis aus Schritt 3 nicht selbst geben. Das macht ein Elternteil auf dem eigenen Handy:</p>
+    <ol>
+      <li>Öffne die Family-Link-App und wähle dein Kind aus.</li>
+      <li>Gehe zu den Einstellungen für das Gerät des Kindes und schalte „Apps aus unbekannten Quellen“ ein.</li>
+      <li>Installiert dann auf dem Handy des Kindes wie oben beschrieben.</li>
+      <li>Danach könnt ihr die Einstellung in Family Link wieder ausschalten. Für ein Update braucht ihr sie wieder.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 id="vokabeln">Vokabeln aus dem Buch</h2>
+    <p>Die Datei für euer Buch speicherst du auf dem Handy. Dann: Zahnrad oben rechts → „Vokabeln verwalten“ → „Vokabeln importieren“ → Datei auswählen. Die App zeigt danach, wie viele Wörter dazugekommen sind.</p>
+  </section>
+
+  <section>
+    <h2 id="hilfe">Es klappt nicht?</h2>
+    <ul>
+      <li><strong>iPhone:</strong> Die App gibt es nur für Android.</li>
+      <li><strong>Samsung:</strong> Ist „Auto Blocker“ eingeschaltet, lässt das Handy keine Apps außerhalb des Play Store zu. Du findest ihn unter Einstellungen → Sicherheit und Datenschutz → Auto Blocker. Schalte ihn für die Installation kurz aus und danach wieder ein.</li>
+      <li><strong>Google „Erweiterter Schutz“:</strong> Damit lässt sich die App leider nicht installieren.</li>
+      <li><strong>Andere Fragen:</strong> Wendet euch an die Person, von der ihr den Link habt.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Kostenloses Hobbyprojekt · <a href="https://github.com/MarkusHornbach/VocTrainer/blob/main/PRIVACY.md">Datenschutz</a> · <a href="https://github.com/MarkusHornbach/VocTrainer">Programmcode</a> · <a href="https://github.com/MarkusHornbach/VocTrainer/blob/main/LICENSE">Lizenz (MIT)</a></p>
+  <p>Diese Seite liegt bei GitHub. Beim Aufruf verarbeitet GitHub technisch bedingt eure IP-Adresse. Die Seite selbst nutzt keine Cookies und kein Tracking.</p>
+</footer>
+</div>
+</body>
+</html>

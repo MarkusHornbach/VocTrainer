@@ -119,6 +119,14 @@ Coverage (reports only, no minimum that fails the build) is collected only with 
   markers off through `AppLook`, which exists in the `debug` and `release` source sets; the release one is
   always off). Run it with `am instrument` and pull `files/manual_screenshots` of the debug app, because
   `connectedDebugAndroidTest` uninstalls the app with its files afterwards.
+- The install dialog screenshots of the web page (`docs/images/install_*.png`, at most 540 px wide) are taken
+  by hand on the Pixel 8a emulator with a Google Play system image: set the system language to German
+  (`settings put system system_locales de-DE`, then reboot), open the release APK link in Chrome, install the
+  app and capture only the dialogs that really appear, cropped to the dialog. Saved names:
+  `install_01_download.png` (download warning), `install_02_erlauben.png` (unknown apps),
+  `install_03_play_protect.png` (Play Protect). Afterwards uninstall the app and delete the download, clear
+  Chrome (`pm clear com.android.chrome`), reset its `REQUEST_INSTALL_PACKAGES` app-op to `default` and restore
+  the language. The web page itself is `docs/index.html`; `/publish` fills in its version.
 
 ## Signing
 

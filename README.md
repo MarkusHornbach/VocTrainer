@@ -16,6 +16,8 @@ in German.
 
 Installation and user manual: see the German user manual [docs/HANDBUCH.md](docs/HANDBUCH.md).
 
+Info and download page (German): <https://markushornbach.github.io/VocTrainer/>
+
 In short: download the APK from the [Releases page](https://github.com/MarkusHornbach/VocTrainer/releases), allow installing apps from that source and
 install it; to update, install the new APK over the old one (never uninstall first – that deletes the
 learning progress).

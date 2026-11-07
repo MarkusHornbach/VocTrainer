@@ -1,5 +1,9 @@
 # Versionshinweise
 
+## Version 1.1.1 – 07.11.2026
+- In der App hat sich nichts geändert. Dein Lernstand bleibt, wie er ist.
+- Auf einer neuen Infoseite im Internet steht, wie du die App auf dein Handy bekommst und dein Buch lädst.
+
 ## Version 1.1.0 – 06.11.2026
 - Neu: Nach einem Update zeigt dir die App einmal, was sich geändert hat.
 - Du möchtest das später noch mal lesen? Tippe in den Einstellungen auf die Version. Dann öffnen sich die „Versionshinweise“.

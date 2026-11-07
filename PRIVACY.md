@@ -29,6 +29,11 @@ VocTrainer ist eine Lern-App für Englisch-Vokabeln. Sie sammelt keine Daten.
 | Vibration (`VIBRATE`) | kurzes Vibrieren nach einer Antwort |
 | `RECEIVE_BOOT_COMPLETED`, `WAKE_LOCK`, `FOREGROUND_SERVICE`, `ACCESS_NETWORK_STATE` | bringt die Android-Bibliothek für geplante Aufgaben (WorkManager) mit, damit die Erinnerung auch nach einem Neustart kommt; die App nutzt kein Netzwerk |
 
+### Webseite
+
+Die Info- und Download-Seite zur App liegt bei GitHub (GitHub Pages). Beim Aufruf verarbeitet GitHub technisch
+bedingt deine IP-Adresse. Die Seite selbst nutzt keine Cookies und kein Tracking.
+
 ### Kontakt
 
 Fragen zum Datenschutz stellst du über die Issues des Projekts auf GitHub:
@@ -59,6 +64,11 @@ VocTrainer is an app for learning English vocabulary. It collects no data.
 | Notifications (`POST_NOTIFICATIONS`) | the daily practice reminder; Android asks you first |
 | Vibration (`VIBRATE`) | a short vibration after an answer |
 | `RECEIVE_BOOT_COMPLETED`, `WAKE_LOCK`, `FOREGROUND_SERVICE`, `ACCESS_NETWORK_STATE` | added by Android's library for scheduled tasks (WorkManager), so the reminder also works after a restart; the app uses no network |
+
+### Web page
+
+The info and download page of the app is hosted by GitHub (GitHub Pages). When you open it, GitHub processes
+your IP address for technical reasons. The page itself uses no cookies and no tracking.
 
 ### Contact
 
